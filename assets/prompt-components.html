@@ -1,0 +1,114 @@
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const copyIcon = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+      viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      aria-hidden="true">
+      <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+    </svg>`;
+
+  const checkIcon = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+      viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      aria-hidden="true">
+      <path d="M20 6 9 17l-5-5"></path>
+    </svg>`;
+
+  async function writeToClipboard(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      try {
+        await navigator.clipboard.writeText(text);
+        return;
+      } catch (error) {
+        // 일부 브라우저는 Clipboard API 권한을 차단하므로 아래 방식을 사용한다.
+      }
+    }
+
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.style.position = "fixed";
+    textarea.style.opacity = "0";
+    document.body.appendChild(textarea);
+    textarea.select();
+    const copied = document.execCommand("copy");
+    textarea.remove();
+    if (!copied) throw new Error("Copy command failed");
+  }
+
+  document.querySelectorAll(".prompt").forEach((prompt) => {
+    if (!prompt.closest(".prompt-details")) {
+      const details = document.createElement("details");
+      details.className = "prompt-details";
+
+      const summary = document.createElement("summary");
+      const summaryText = document.createElement("span");
+      summaryText.className = "prompt-summary-text";
+      summaryText.textContent = "프롬프트 펼치기";
+      summary.appendChild(summaryText);
+
+      prompt.parentNode.insertBefore(details, prompt);
+      details.appendChild(summary);
+      details.appendChild(prompt);
+
+      details.addEventListener("toggle", () => {
+        summaryText.textContent = details.open
+          ? "프롬프트 접기"
+          : "프롬프트 펼치기";
+      });
+    }
+
+    if (prompt.querySelector(":scope > .prompt-copy")) return;
+
+    const button = document.createElement("button");
+    button.className = "prompt-copy";
+    button.type = "button";
+    button.setAttribute("aria-label", "프롬프트 복사");
+    button.setAttribute("title", "프롬프트 복사");
+    button.innerHTML = copyIcon;
+
+    button.addEventListener("click", async () => {
+      const clone = prompt.cloneNode(true);
+      clone.querySelector(".prompt-copy")?.remove();
+      const text = clone.innerText.trim();
+
+      try {
+        await writeToClipboard(text);
+        button.classList.add("copied");
+        button.setAttribute("aria-label", "복사됨");
+        button.setAttribute("title", "복사됨");
+        button.innerHTML = checkIcon;
+
+        window.setTimeout(() => {
+          button.classList.remove("copied");
+          button.setAttribute("aria-label", "프롬프트 복사");
+          button.setAttribute("title", "프롬프트 복사");
+          button.innerHTML = copyIcon;
+        }, 1300);
+      } catch (error) {
+        console.error("Prompt copy failed:", error);
+      }
+    });
+
+    prompt.appendChild(button);
+  });
+
+  const promptDetails = document.querySelectorAll(".prompt-details");
+
+  window.addEventListener("beforeprint", () => {
+    promptDetails.forEach((details) => {
+      details.dataset.openBeforePrint = details.open ? "true" : "false";
+      details.open = true;
+    });
+  });
+
+  window.addEventListener("afterprint", () => {
+    promptDetails.forEach((details) => {
+      details.open = details.dataset.openBeforePrint === "true";
+      delete details.dataset.openBeforePrint;
+    });
+  });
+});
+</script>

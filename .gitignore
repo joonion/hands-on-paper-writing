@@ -1,0 +1,7 @@
+/.quarto/
+/_site/
+/chapters/*_files/
+
+**/*.quarto_ipynb
+
+AGENTS.md

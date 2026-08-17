@@ -1,0 +1,71 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "chapters/*.qmd"
+
+lang: ko
+
+filters:
+  - filters/prompt.lua
+
+website:
+  title: "ChatGPT를 활용한 논문 작성법"
+  description: "생성형 AI 시대의 책임 있는 논문 쓰기를 위한 온라인 실습 가이드"
+  navbar:
+    background: primary
+    left:
+      - href: index.qmd
+        text: 온라인 실습 가이드
+  sidebar:
+    style: docked
+    search: true
+    collapse-level: 2
+    contents:
+      - href: index.qmd
+        text: 이용 안내
+      - section: "제1부. 생성형 AI"
+        contents:
+          - href: chapters/ch01.qmd
+            text: "1. 생성형 AI의 이해"
+          - href: chapters/ch02.qmd
+            text: "2. 생성형 AI와 연구 윤리"
+      - section: "제2부. 논문 작성"
+        contents:
+          - href: chapters/ch03.qmd
+            text: "3. 챗지피티와의 만남"
+          - href: chapters/ch04.qmd
+            text: "4. 논문 초안 써보기"
+          - href: chapters/ch05.qmd
+            text: "5. 초안의 수정과 재구성"
+          - href: chapters/ch06.qmd
+            text: "6. 표와 그림 넣기"
+          - href: chapters/ch07.qmd
+            text: "7. 문헌 고찰"
+          - href: chapters/ch08.qmd
+            text: "8. 인용과 참고문헌"
+      - section: "제3부. 연구 수행"
+        contents:
+          - href: chapters/ch09.qmd
+            text: "9. 연구 기획"
+          - href: chapters/ch10.qmd
+            text: "10. 문헌 조사"
+          - href: chapters/ch11.qmd
+            text: "11. 연구 설계"
+          - href: chapters/ch12.qmd
+            text: "12. 자료 분석"
+  page-navigation: true
+  page-footer:
+    center: "ChatGPT를 활용한 논문 작성법 · 온라인 실습 가이드"
+
+format:
+  html:
+    theme: cosmo
+    css: assets/styles.css
+    include-after-body:
+      - assets/prompt-components.html
+    toc: true
+    toc-depth: 3
+    code-copy: true
+    code-overflow: wrap

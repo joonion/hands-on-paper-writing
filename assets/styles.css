@@ -1,0 +1,134 @@
+body {
+  line-height: 1.75;
+  word-break: keep-all;
+}
+
+.quarto-title-banner {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.lead {
+  color: var(--bs-secondary-color);
+  font-size: 1.15rem;
+}
+
+.sidebar-title {
+  line-height: 1.4;
+}
+
+.prompt {
+  position: relative;
+  margin: 1.5rem 0;
+  padding: 1.2rem 3.4rem 1.2rem 1.3rem;
+  border: 1px solid #e2e4e7;
+  border-radius: 10px;
+  background: #f6f7f8;
+  color: #24292f;
+  font-family: inherit;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.prompt-details {
+  margin: 1.5rem 0;
+  border: 1px solid #e2e4e7;
+  border-radius: 10px;
+  background: #f6f7f8;
+  overflow: hidden;
+}
+
+.prompt-details > summary {
+  padding: 0.95rem 1.3rem;
+  color: #3f4854;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.prompt-details > summary:hover {
+  background: #eceef1;
+  color: #24292f;
+}
+
+.prompt-details > summary:focus-visible {
+  outline: 2px solid #4c78a8;
+  outline-offset: -2px;
+}
+
+.prompt-details[open] > summary {
+  border-bottom: 1px solid #e2e4e7;
+}
+
+.prompt-details > .prompt {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.prompt::before {
+  display: block;
+  margin-bottom: 0.65rem;
+  color: #667085;
+  content: "PROMPT";
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.08em;
+}
+
+.prompt > :first-child {
+  margin-top: 0;
+}
+
+.prompt > :last-child {
+  margin-bottom: 0;
+}
+
+.prompt p {
+  margin-bottom: 0.85rem;
+}
+
+.prompt-copy {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: #667085;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.prompt-copy:hover {
+  background: #e9eaec;
+  color: #24292f;
+}
+
+.prompt-copy:focus-visible {
+  outline: 2px solid #4c78a8;
+  outline-offset: 2px;
+}
+
+.prompt-copy.copied {
+  color: #216e39;
+}
+
+@media print {
+  .prompt-details > summary {
+    display: none;
+  }
+
+  .prompt-details > .prompt {
+    display: block !important;
+  }
+}

@@ -1,0 +1,15 @@
+<!-- source: D:/_The_Craft_of_Paper/how-to-write-papers-with-chatgpt/chapters/ch08.qmd lines 390-404; copied: 2026-08-18 -->
+
+아래에는 Word로 변환하기 전 마크다운 원고에서 추출한 인용 자리표시자 목록이 있어.
+
+Word에서 Zotero 인용으로 교체할 작업 목록을 만들어줘. 다음 열을 포함해줘.
+
+- 작업 순서
+- 자리표시자
+- Zotero에서 찾을 인용 키
+- 단일 또는 복수 인용
+- 입력할 쪽수나 위치
+- 직접인용 여부
+- 교체 뒤 확인할 내용
+
+실제 Zotero 항목을 확인하지 않은 채 저자명·제목·연도·DOI를 만들어내지 마. 목록에 불명확한 키가 있으면 `[Zotero에서 확인]`이라고 표시해줘.
