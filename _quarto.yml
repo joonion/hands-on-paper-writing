@@ -57,7 +57,7 @@ website:
             text: "12. 자료 분석"
   page-navigation: true
   page-footer:
-    center: "ChatGPT를 활용한 논문 작성법 · 온라인 실습 가이드"
+    center: "© 2026 Joonion Bae · 별도 표시가 없는 콘텐츠는 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)에 따라 이용할 수 있습니다. 제3자 자료는 해당 조건을 따릅니다."
 
 format:
   html:
