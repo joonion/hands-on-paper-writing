@@ -32,7 +32,7 @@ literature/
 ```
 
 ::: {.prompt}
-{{< include ../prompts/common/2-연구수행-프로젝트-지침.md >}}
+{{< include ../prompts/common/2-논문연구-프로젝트-지침.md >}}
 :::
 
 ::: {.callout-warning title="원문을 제공할 권한부터 확인하세요"}

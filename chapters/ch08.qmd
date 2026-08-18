@@ -36,7 +36,7 @@ title: "8. 인용과 참고문헌"
 | Google Docs·HWP/HWPX | 공동편집 또는 제출을 위한 별도 사본 |
 
 ::: {.prompt}
-{{< include ../prompts/common/2-연구수행-프로젝트-지침.md >}}
+{{< include ../prompts/common/2-논문연구-프로젝트-지침.md >}}
 :::
 
 ::: {.callout-warning title="한 정보를 여러 곳에서 따로 고치지 마세요"}

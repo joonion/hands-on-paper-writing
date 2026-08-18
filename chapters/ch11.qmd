@@ -25,7 +25,7 @@ title: "11. 연구 설계"
 최신 `연구기획.md`와 `문헌조사.md`를 프로젝트 소스에 추가합니다. 10장에서 연구 기획의 필수 수정사항이 발견되었다면 수정된 `연구기획.md`가 준비된 뒤 시작하세요.
 
 ::: {.prompt}
-{{< include ../prompts/common/2-연구수행-프로젝트-지침.md >}}
+{{< include ../prompts/common/2-논문연구-프로젝트-지침.md >}}
 :::
 
 ::: {.callout-warning title="AI의 제안을 연구자가 검토하세요"}
