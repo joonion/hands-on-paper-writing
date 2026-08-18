@@ -25,7 +25,7 @@ title: "11. 연구 설계"
 최신 `연구기획.md`와 `문헌조사.md`를 프로젝트 소스에 추가합니다. 10장에서 연구 기획의 필수 수정사항이 발견되었다면 수정된 `연구기획.md`가 준비된 뒤 시작하세요.
 
 ::: {.prompt}
-{{< include ../prompts/common/project.md >}}
+{{< include ../prompts/common/2-연구수행-프로젝트-지침.md >}}
 :::
 
 ::: {.callout-warning title="AI의 제안을 연구자가 검토하세요"}
@@ -39,7 +39,7 @@ title: "11. 연구 설계"
 연구 질문에 답할 수 있는 방법 후보를 비교하고, 질문의 성격과 확보 가능한 자료에 가장 잘 맞는 연구방법을 선택합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch11/01-method.md >}}
+{{< include ../prompts/ch11/11.1-연구방법.md >}}
 :::
 
 ### 방법 선정 점검
@@ -57,7 +57,7 @@ title: "11. 연구 설계"
 연구 질문과 가설에 필요한 변수만 선택하고, 이론적 의미인 개념적 정의와 실제 측정 방식인 조작적 정의를 구분합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch11/02-variables.md >}}
+{{< include ../prompts/ch11/11.2-변수-정의.md >}}
 :::
 
 ### 변수 점검
@@ -75,7 +75,7 @@ title: "11. 연구 설계"
 목표 모집단과 실제 연구 대상을 구분하고, 포함·제외 기준과 표집 방법 및 예상 한계를 정합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch11/03-participants-sampling.md >}}
+{{< include ../prompts/ch11/11.3-연구대상과-표본.md >}}
 :::
 
 ### 표집 점검
@@ -93,7 +93,7 @@ title: "11. 연구 설계"
 연구 참여자 모집부터 자료 저장까지의 순서, 참여자의 활동, 연구윤리와 개인정보 보호 절차를 구체화합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch11/04-data-collection.md >}}
+{{< include ../prompts/ch11/11.4-자료-수집.md >}}
 :::
 
 ### 윤리와 자료관리 점검
@@ -112,7 +112,7 @@ title: "11. 연구 설계"
 각 변수의 조작적 정의에 맞는 측정도구 후보를 찾고, 출처와 사용 조건, 신뢰도·타당도 근거를 확인합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch11/05-instruments.md >}}
+{{< include ../prompts/ch11/11.5-측정도구.md >}}
 :::
 
 ### 측정도구 점검
@@ -130,7 +130,7 @@ title: "11. 연구 설계"
 각 연구 질문과 가설을 분석 변수, 분석방법, 전제조건, 표본 크기 및 보고할 통계량과 연결합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch11/06-analysis-plan.md >}}
+{{< include ../prompts/ch11/11.6-자료-분석-계획.md >}}
 :::
 
 ### 분석 계획 점검
@@ -149,7 +149,7 @@ title: "11. 연구 설계"
 현재 설계의 내적·외적·측정·통계적 결론 타당도 위협과 편향을 찾아 필수 수정사항과 권장 개선사항으로 구분합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch11/07-validity-threats.md >}}
+{{< include ../prompts/ch11/11.7-타당도-위협.md >}}
 :::
 
 ### 검토 결과 처리
@@ -169,7 +169,7 @@ title: "11. 연구 설계"
 검토와 수정을 마친 뒤 확정된 설계만 종합하여 자료 수집과 분석의 기준이 될 연구 설계 파일을 작성합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch11/08-research-design.md >}}
+{{< include ../prompts/ch11/11.8-연구설계-종합.md >}}
 :::
 
 ### 최종 점검

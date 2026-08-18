@@ -25,7 +25,7 @@ title: "12. 자료 분석"
 최신 `연구기획.md`와 `연구설계.md`, 원자료, 자료사전과 분석에 사용할 소프트웨어 환경을 준비합니다. 원자료는 읽기 전용으로 보존하고, 분석용 사본과 코드·출력 폴더를 분리하세요.
 
 ::: {.prompt}
-{{< include ../prompts/common/project.md >}}
+{{< include ../prompts/common/2-연구수행-프로젝트-지침.md >}}
 :::
 
 ::: {.callout-warning title="예시 파일과 분석방법을 자신의 연구에 맞추세요"}
@@ -43,7 +43,7 @@ title: "12. 자료 분석"
 원자료를 변경하지 않은 상태에서 변수 구조, 결측치, 이상치, 중복, 입력 오류와 코딩을 점검하고 분석 계획의 미정 사항도 확인합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch12/01-data-check.md >}}
+{{< include ../prompts/ch12/12.1-데이터-점검.md >}}
 :::
 
 ### 데이터 품질 점검
@@ -65,7 +65,7 @@ title: "12. 자료 분석"
 연구 대상과 주요 변수의 특성을 이해하고 이후 분석에 필요한 분포와 데이터 품질 문제를 확인합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch12/02-descriptive-statistics.md >}}
+{{< include ../prompts/ch12/12.2-기술통계.md >}}
 :::
 
 ### 결과 점검
@@ -83,7 +83,7 @@ title: "12. 자료 분석"
 연구 질문과 가설별로 사전에 계획한 분석을 실행하고, 전제조건·추정치·불확실성과 검정 결과를 기록합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch12/03-modeling.md >}}
+{{< include ../prompts/ch12/12.3-통계적-검정과-모델링.md >}}
 :::
 
 ### 세 단계로 검증하기
@@ -107,7 +107,7 @@ title: "12. 자료 분석"
 연구 질문과 핵심 결과를 이해하는 데 필요한 그래프만 만들고, 분석 코드로 다시 생성할 수 있도록 저장합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch12/04-visualization.md >}}
+{{< include ../prompts/ch12/12.4-결과-시각화.md >}}
 :::
 
 ### 시각화 점검
@@ -125,7 +125,7 @@ title: "12. 자료 분석"
 유의확률과 별도로 효과의 크기와 방향, 신뢰구간 및 추정의 정밀성을 연구 맥락에서 평가합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch12/05-effect-size.md >}}
+{{< include ../prompts/ch12/12.5-효과크기와-신뢰구간.md >}}
 :::
 
 ### 추정 결과 점검
@@ -143,7 +143,7 @@ title: "12. 자료 분석"
 각 연구 질문에 대한 답과 가설의 지지 여부를 정리하되, 데이터와 연구 설계가 허용하는 범위 안에서만 해석합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch12/06-interpretation.md >}}
+{{< include ../prompts/ch12/12.6-결과-해석.md >}}
 :::
 
 ### 해석 점검
@@ -161,7 +161,7 @@ title: "12. 자료 분석"
 결과의 신뢰성을 점검하거나 추가 설명이 필요한지 검토하고, 사전에 계획하지 않은 분석은 탐색적으로 명확히 표시합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch12/07-additional-analysis.md >}}
+{{< include ../prompts/ch12/12.7-추가-분석.md >}}
 :::
 
 ### 추가 분석 점검
@@ -177,7 +177,7 @@ title: "12. 자료 분석"
 데이터 정제 기록, 기술통계, 질문별 분석, 효과크기, 시각화, 해석과 추가 분석을 하나의 재현 가능한 결과 파일로 종합합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch12/08-data-analysis.md >}}
+{{< include ../prompts/ch12/12.8-자료분석-종합.md >}}
 :::
 
 ### 최종 점검

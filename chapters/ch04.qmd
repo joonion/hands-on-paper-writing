@@ -25,7 +25,7 @@ title: "4. 논문 초안 써보기"
 `연구기획.md`, `문헌조사.md`, `연구설계.md`, `자료분석.md`와 실제 분석표·그림을 프로젝트 소스에 추가합니다. 각 산출물이 최신 상태이며 비어 있지 않은지 확인하세요.
 
 ::: {.prompt}
-{{< include ../prompts/common/project.md >}}
+{{< include ../prompts/common/2-연구수행-프로젝트-지침.md >}}
 :::
 
 ::: {.callout-warning title="교재의 가상 연구 예시를 확인하세요"}
@@ -39,7 +39,7 @@ title: "4. 논문 초안 써보기"
 논문의 최종 배열과 실제 집필 순서를 구분하고, 연구 질문에서 방법·결과·논의로 이어지는 논증 흐름과 절별 근거를 설계합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch04/01-paper-structure.md >}}
+{{< include ../prompts/ch04/4.1-논문-구조.md >}}
 :::
 
 ### 구조 점검
@@ -61,7 +61,7 @@ title: "4. 논문 초안 써보기"
 실제로 확정하고 수행한 연구 절차를 다른 연구자가 이해하고 평가할 수 있도록 연구 방법 초안을 작성합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch04/02-methods.md >}}
+{{< include ../prompts/ch04/4.2-연구-방법.md >}}
 :::
 
 ### 연구 방법 점검
@@ -80,7 +80,7 @@ title: "4. 논문 초안 써보기"
 검증된 분석 출력에서 연구 질문에 필요한 수치만 선별하여 표·그림과 함께 연구 결과 초안을 작성합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch04/03-results.md >}}
+{{< include ../prompts/ch04/4.3-연구-결과.md >}}
 :::
 
 ### 연구 결과 점검
@@ -99,7 +99,7 @@ title: "4. 논문 초안 써보기"
 확인된 문헌 근거를 사용하여 연구 배경에서 연구 문제·공백·목적과 질문으로 좁혀지는 서론 초안을 작성합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch04/04-introduction.md >}}
+{{< include ../prompts/ch04/4.4-서론.md >}}
 :::
 
 ### 서론 점검
@@ -117,7 +117,7 @@ title: "4. 논문 초안 써보기"
 핵심 결과가 연구 질문에 주는 답을 설명하고, 확인된 선행연구와 비교하여 의미·한계·후속 연구와 결론을 작성합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch04/05-discussion.md >}}
+{{< include ../prompts/ch04/4.5-논의와-결론.md >}}
 :::
 
 ### 논의 점검
@@ -136,7 +136,7 @@ title: "4. 논문 초안 써보기"
 연구 목적·방법·핵심 결과·제한된 결론을 하나의 독립적인 문단으로 압축하고 핵심어를 선정합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch04/06-abstract.md >}}
+{{< include ../prompts/ch04/4.6-국문-초록과-핵심어.md >}}
 :::
 
 ### 초록 점검
@@ -152,7 +152,7 @@ title: "4. 논문 초안 써보기"
 본문과 초록을 모두 작성한 뒤 연구의 핵심 내용을 정확히 드러내는 제목 후보를 비교합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch04/07-title-candidates.md >}}
+{{< include ../prompts/ch04/4.7-제목-후보.md >}}
 :::
 
 ### 제목 후보 점검
@@ -167,7 +167,7 @@ title: "4. 논문 초안 써보기"
 후보를 세 개로 좁혀 차이를 비교한 뒤 최종 제목은 연구자가 직접 선택합니다.
 
 ::: {.prompt}
-{{< include ../prompts/ch04/08-title-refinement.md >}}
+{{< include ../prompts/ch04/4.8-최종-제목.md >}}
 :::
 
 ### 첫 초안 최종 점검
