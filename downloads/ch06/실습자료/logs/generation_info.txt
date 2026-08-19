@@ -1,7 +1,0 @@
-generated_at=2026-08-19 18:11:32 +0900
-project_dir=D:/_The_Craft_of_Paper/hands-on-writing-papers/analysis
-analysis_run_dir=D:/_The_Craft_of_Paper/hands-on-writing-papers/analysis/04_outputs/run_20260819_173902
-input_dir=D:/_The_Craft_of_Paper/hands-on-writing-papers/analysis/04_outputs/run_20260819_173902/tables
-output_dir=D:/_The_Craft_of_Paper/hands-on-writing-papers/analysis/04_outputs/publication_20260819_181131
-R_version=R version 4.6.0 (2026-04-24 ucrt)
-platform=x86_64-w64-mingw32

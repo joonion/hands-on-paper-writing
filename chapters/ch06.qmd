@@ -11,28 +11,15 @@ title: "6. 표와 그림"
 
 ## 실습 준비
 
-- 5장에서 사용한 논문 작성 프로젝트를 계속 사용합니다.
-- 프로젝트 설정과 소스가 아래 조건을 충족하는지 확인합니다.
-
-| 구분 | 설정 |
-|---|---|
-| 프로젝트 | 5장에서 사용한 논문 작성 프로젝트를 계속 사용하세요. |
-| 메모리 | 프로젝트 전용 메모리를 유지하세요. |
-| 프로젝트 지침 | 아래의 논문작성 프로젝트 지침을 사용하세요. |
-
-::: prompt
-{{< include ../prompts/common/1-논문작성-프로젝트-지침.md >}}
-:::
-
 - 프로젝트 소스에 다음 파일을 다운로드하여 추가합니다.
     - [5장 산출물 `논문초고_5장.md`](../downloads/ch05/논문초고_5장.md){download="논문초고_5장.md"}
     - [12장 산출물 `자료분석.md`](../downloads/ch12/자료분석_12장.md){download="자료분석.md"}
-    - [간접효과 그림](../downloads/ch06/실습자료/figures/figure01_mediation_effects.png){download="figure01_mediation_effects.png"}
-    - [경로모형 그림](../downloads/ch06/실습자료/figures/figure02_path_model.png){download="figure02_path_model.png"}
-    - [표·그림 생성 스크립트](../downloads/ch06/실습자료/scripts/tables_figures.R){download="tables_figures.R"}
-    - [실습자료 설명](../downloads/ch06/실습자료/README.md){download="README.md"}
+    - [간접효과 그림(PNG)](../downloads/ch06/figures/figure01_mediation_effects.png){download="figure01_mediation_effects.png"}
+    - [간접효과 그림(PDF)](../downloads/ch06/figures/figure01_mediation_effects.pdf){download="figure01_mediation_effects.pdf"}
+    - [경로모형 그림(PNG)](../downloads/ch06/figures/figure02_path_model.png){download="figure02_path_model.png"}
+    - [경로모형 그림(PDF)](../downloads/ch06/figures/figure02_path_model.pdf){download="figure02_path_model.pdf"}
 - `논문초고_5장.md`를 복제하여 `논문초고_6장.md`라는 작업 파일을 만듭니다.
-- 그림 파일은 작업 파일을 기준으로 `실습자료/figures/`에 있다고 가정합니다. 다른 위치에 저장했다면 실제 상대경로에 맞게 수정합니다.
+- 그림 파일은 작업 파일을 기준으로 `figures/`에 있다고 가정합니다. 다른 위치에 저장했다면 실제 상대경로에 맞게 수정합니다.
 - 각 실습에서 승인한 수정만 `논문초고_6장.md`에 누적하여 반영하고 `논문초고_5장.md`는 수정하지 않습니다.
 
 ::: {.callout-warning title="원본과 수정본을 구분하세요"}
@@ -150,7 +137,7 @@ title: "6. 표와 그림"
 [그림 파일 삽입 반영]
 - 작업 파일: `논문초고_6장.md`
 - 삭제할 자리표시자: {그림 1의 기존 제목과 인용문}
-- 삽입할 파일: `실습자료/figures/figure01_mediation_effects.png`
+- 삽입할 파일: `figures/figure01_mediation_effects.png`
 - 파일 확인 결과: {존재·내용 일치 여부}
 
 확인한 그림 파일만 사용하여 기존 그림 1 자리표시자를 마크다운 이미지로 교체하세요. 이 단계에서는 캡션·라벨·대체 텍스트와 본문 설명을 완성하지 말고 이미지 경로가 연결되는 최소한의 수정만 제시하세요.
@@ -311,5 +298,5 @@ title: "6. 표와 그림"
 :::
 
 ::: {.callout-important title="다음 단계로 가져갈 산출물"}
-표·그림·수식의 형식과 연결을 확인한 [`논문초고_6장.md`](../downloads/ch06/논문초고_6장.md){download="논문초고_6장.md"}, 그림 원본과 생성 코드를 함께 보존하세요. 7장에서는 이 원고를 바탕으로 문헌 인용과 참고문헌을 정비합니다.
+표·그림·수식의 형식과 연결을 확인한 [`논문초고_6장.md`](../downloads/ch06/논문초고_6장.md){download="논문초고_6장.md"}와 PNG·PDF 그림 파일을 함께 보존하세요. 옵시디언에서 계속 편집하려면 [`논문초고_6장.zip`](../downloads/ch06/논문초고_6장.zip){download="논문초고_6장.zip"}을 내려받아 폴더 구조를 유지한 채 압축을 해제하세요. 7장에서는 이 원고를 바탕으로 문헌 인용과 참고문헌을 정비합니다.
 :::
