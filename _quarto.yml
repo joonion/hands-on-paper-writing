@@ -4,6 +4,8 @@ project:
   render:
     - "*.qmd"
     - "chapters/*.qmd"
+  resources:
+    - "downloads/**"
 
 lang: ko
 
@@ -24,37 +26,25 @@ website:
     collapse-level: 2
     contents:
       - href: index.qmd
-        text: 이용 안내
+        text: 실습 안내
       - section: "제1부. 생성형 AI"
         contents:
           - href: chapters/ch01.qmd
-            text: "1. 생성형 AI의 이해"
           - href: chapters/ch02.qmd
-            text: "2. 생성형 AI와 연구 윤리"
       - section: "제2부. 논문 작성"
         contents:
           - href: chapters/ch03.qmd
-            text: "3. 챗지피티와의 만남"
           - href: chapters/ch04.qmd
-            text: "4. 논문 초안 작성"
           - href: chapters/ch05.qmd
-            text: "5. 초안의 수정과 재구성"
           - href: chapters/ch06.qmd
-            text: "6. 표와 그림"
           - href: chapters/ch07.qmd
-            text: "7. 문헌 고찰"
           - href: chapters/ch08.qmd
-            text: "8. 인용과 참고문헌"
       - section: "제3부. 논문 연구"
         contents:
           - href: chapters/ch09.qmd
-            text: "9. 연구 기획"
           - href: chapters/ch10.qmd
-            text: "10. 문헌 조사"
           - href: chapters/ch11.qmd
-            text: "11. 연구 설계"
           - href: chapters/ch12.qmd
-            text: "12. 자료 분석"
   page-navigation: true
   page-footer:
     center: "© 2026 Joonion Bae · 별도 표시가 없는 콘텐츠는 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)에 따라 이용할 수 있습니다. 제3자 자료는 해당 조건을 따릅니다."
