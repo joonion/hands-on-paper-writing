@@ -1,0 +1,2 @@
+"response_id","timestamp","entered_study_id","duration_sec","SRL1_T2","SRL2_T2","SRL3_T2","SRL4_T2","SRL5_T2","SRL6_T2","synthetic_flag","entered_study_id_original","study_id_std","id_in_roster"
+"T2R-0026","2026-06-10 23:19:00","ALG26-999",79,"그렇다","그렇다","매우 그렇다","그렇다","그렇다","보통이다",1,"ALG26-999","ALG26-999",FALSE

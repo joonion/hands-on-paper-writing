@@ -1,0 +1,8 @@
+"모형","변수","VIF"
+"mediator_model_RQ1_H1","LCU_T1_mean",1.122
+"mediator_model_RQ1_H1","SRL_T1_mean",1.172
+"mediator_model_RQ1_H1","midterm_score",1.073
+"outcome_model_RQ2_H2","SRL_T2_mean",1.708
+"outcome_model_RQ2_H2","SRL_T1_mean",1.569
+"outcome_model_RQ2_H2","LCU_T1_mean",1.269
+"outcome_model_RQ2_H2","midterm_score",1.073

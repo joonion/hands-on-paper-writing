@@ -1,0 +1,4 @@
+"research_question","hypothesis","test","scale","estimate","standardized_estimate","ci_low","ci_high","p_value","statistical_rule","meets_statistical_rule"
+"RQ1","H1","LCU_T1_mean coefficient in mediator model","raw coefficient with standardized beta reported separately",0.291899424619794,0.293010724978698,0.164996149625473,0.418802699614115,1.09528238046075e-05,"positive estimate and p < 0.050",TRUE
+"RQ2","H2","SRL_T2_mean coefficient in outcome model","raw coefficient with standardized beta reported separately",3.39990266238561,0.173707689949536,0.568835225887651,6.23097009888357,0.0189010751027229,"positive estimate and p < 0.050",TRUE
+"RQ3","H3","bootstrap indirect effect (raw-score scale)","raw_score",0.992429630913665,0.0508982161664885,0.167267621768287,2.10481456616439,0.0136,"positive indirect effect and 95% bootstrap CI excludes 0",TRUE

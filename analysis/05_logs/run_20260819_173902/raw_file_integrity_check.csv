@@ -1,0 +1,5 @@
+"file","md5_before","md5_after","unchanged"
+"SYNTHETIC_00_roster_raw.csv","9d38a1d66e54748733d5c3b3be706cc9","9d38a1d66e54748733d5c3b3be706cc9",TRUE
+"SYNTHETIC_01_T1_survey_raw.csv","795ae1b5781ce9ed2e042e020ab7b3e9","795ae1b5781ce9ed2e042e020ab7b3e9",TRUE
+"SYNTHETIC_02_T2_survey_raw.csv","a2e3bbe2616511acfc5259fe5719a480","a2e3bbe2616511acfc5259fe5719a480",TRUE
+"SYNTHETIC_03_exam_scores_raw.csv","1cf9dedb3573758ff7c01c03c03d064a","1cf9dedb3573758ff7c01c03c03d064a",TRUE

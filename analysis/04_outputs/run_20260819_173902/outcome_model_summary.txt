@@ -1,0 +1,23 @@
+
+Call:
+stats::lm(formula = final_score ~ SRL_T2_mean + SRL_T1_mean + 
+    LCU_T1_mean + midterm_score, data = analysis_data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-25.0370  -5.7208   0.2903   5.9360  25.5313 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    7.47304    5.61117   1.332   0.1849    
+SRL_T2_mean    3.39990    1.43331   2.372   0.0189 *  
+SRL_T1_mean    2.80914    1.25047   2.246   0.0261 *  
+LCU_T1_mean    0.57580    1.23088   0.468   0.6406    
+midterm_score  0.58801    0.05975   9.841   <2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 9.627 on 157 degrees of freedom
+Multiple R-squared:  0.507,	Adjusted R-squared:  0.4945 
+F-statistic: 40.37 on 4 and 157 DF,  p-value: < 2.2e-16
+

@@ -1,0 +1,9 @@
+run_id=20260819_173902
+project_dir=D:/_The_Craft_of_Paper/hands-on-writing-papers/analysis
+raw_dir=D:/_The_Craft_of_Paper/hands-on-writing-papers/analysis/01_raw
+final_analysis_n=162
+bootstrap_sims=5000
+analysis_seed=20260819
+derived_dir=D:/_The_Craft_of_Paper/hands-on-writing-papers/analysis/03_derived/run_20260819_173902
+output_dir=D:/_The_Craft_of_Paper/hands-on-writing-papers/analysis/04_outputs/run_20260819_173902
+log_dir=D:/_The_Craft_of_Paper/hands-on-writing-papers/analysis/05_logs/run_20260819_173902
