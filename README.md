@@ -19,7 +19,7 @@
 
 이 온라인 실습 가이드는 GitHub Pages로 온라인 사이트를 자동 배포합니다.
 
-[온라인 실습 가이드 바로가기](https://joonion.github.io/hands-on-writing-papers)
+[온라인 실습 가이드 바로가기](https://joonion.github.io/hands-on-paper-writing)
 
 ## 로컬 실행
 
