@@ -87,8 +87,10 @@ body {
   margin-bottom: 0;
 }
 
-.prompt p {
-  margin-bottom: 0.85rem;
+.prompt p,
+.prompt ul,
+.prompt ol {
+  margin-block: 0;
 }
 
 .prompt-copy {
