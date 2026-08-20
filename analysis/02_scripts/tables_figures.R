@@ -109,6 +109,14 @@ open_png <- function(path, width = PNG_WIDTH, height = PNG_HEIGHT, res = PNG_RES
   grDevices::png(path, width = width, height = height, res = res, type = if (.Platform$OS.type == "windows") "windows" else "cairo")
 }
 
+open_pdf <- function(path, width = PDF_WIDTH, height = PDF_HEIGHT) {
+  if (isTRUE(capabilities("cairo"))) {
+    grDevices::cairo_pdf(path, width = width, height = height, family = "sans")
+  } else {
+    grDevices::pdf(path, width = width, height = height, family = "sans")
+  }
+}
+
 with_graphics <- function(open_device, plot_fun) {
   open_device()
   old <- par(no.readonly = TRUE)
@@ -140,7 +148,7 @@ out_tables <- file.path(out_root, "tables")
 out_figures <- file.path(out_root, "figures")
 out_diagnostics <- file.path(out_root, "diagnostics")
 out_logs <- file.path(out_root, "logs")
-lapply(c(out_tables, out_figures, out_diagnostics, out_logs), safe_dir_create)
+invisible(lapply(c(out_tables, out_figures, out_diagnostics, out_logs), safe_dir_create))
 
 message("분석 출력 입력 폴더: ", input_dir)
 message("표·그림 출력 폴더: ", out_root)
@@ -375,7 +383,7 @@ plot_mediation <- function() {
 }
 
 with_graphics(function() open_png(file.path(out_figures, "figure01_mediation_effects.png")), plot_mediation)
-with_graphics(function() grDevices::pdf(file.path(out_figures, "figure01_mediation_effects.pdf"), width = PDF_WIDTH, height = PDF_HEIGHT, family = "sans"), plot_mediation)
+with_graphics(function() open_pdf(file.path(out_figures, "figure01_mediation_effects.pdf")), plot_mediation)
 
 # ------------------------------
 # 9. 그림 2: 경로모형 요약
@@ -432,7 +440,7 @@ plot_path <- function() {
 }
 
 with_graphics(function() open_png(file.path(out_figures, "figure02_path_model.png"), width = 1800, height = 1200, res = 180), plot_path)
-with_graphics(function() grDevices::pdf(file.path(out_figures, "figure02_path_model.pdf"), width = 10, height = 6.5, family = "sans"), plot_path)
+with_graphics(function() open_pdf(file.path(out_figures, "figure02_path_model.pdf"), width = 10, height = 6.5), plot_path)
 
 # ------------------------------
 # 10. 진단 그래프 (최종 결과 그림과 분리)

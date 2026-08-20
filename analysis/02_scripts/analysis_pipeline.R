@@ -121,7 +121,9 @@ locate_raw_dir <- function(project_dir, raw_files) {
 find_optional_file <- function(project_dir, file_name) {
   candidates <- c(
     file.path(project_dir, "00_protocol", file_name),
-    file.path(project_dir, file_name)
+    file.path(project_dir, "02_codebook", file_name),
+    file.path(project_dir, file_name),
+    file.path(dirname(project_dir), file_name)
   )
   hit <- candidates[file.exists(candidates)]
   if (length(hit) == 0L) NA_character_ else normalizePath(hit[[1L]], winslash = "/")

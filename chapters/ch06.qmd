@@ -14,12 +14,22 @@ title: "6. 표와 그림"
 - 프로젝트 소스에 다음 파일을 다운로드하여 추가합니다.
     - [5장 산출물 `논문초고_5장.md`](../downloads/ch05/논문초고_5장.md){download="논문초고_5장.md"}
     - [12장 산출물 `자료분석.md`](../downloads/ch12/자료분석_12장.md){download="자료분석.md"}
-    - [간접효과 그림(PNG)](../downloads/ch06/figures/figure01_mediation_effects.png){download="figure01_mediation_effects.png"}
-    - [간접효과 그림(PDF)](../downloads/ch06/figures/figure01_mediation_effects.pdf){download="figure01_mediation_effects.pdf"}
-    - [경로모형 그림(PNG)](../downloads/ch06/figures/figure02_path_model.png){download="figure02_path_model.png"}
-    - [경로모형 그림(PDF)](../downloads/ch06/figures/figure02_path_model.pdf){download="figure02_path_model.pdf"}
+    - [그림 파일 묶음 `figures.zip`](../downloads/ch06/figures.zip){download="figures.zip"}
 - `논문초고_5장.md`를 복제하여 `논문초고_6장.md`라는 작업 파일을 만듭니다.
-- 그림 파일은 작업 파일을 기준으로 `figures/`에 있다고 가정합니다. 다른 위치에 저장했다면 실제 상대경로에 맞게 수정합니다.
+- 옵시디언 볼트 아래에 `figures/` 폴더를 만들고, `figures.zip`의 PNG·PDF 파일 네 개를 그 안에 압축 해제합니다.
+- 그림 파일은 작업 파일을 기준으로 `figures/`에 있다고 가정합니다. 압축을 해제한 뒤 다음 구조인지 확인하세요.
+
+```text
+옵시디언 볼트/
+├─ 논문초고_5장.md
+├─ 자료분석.md
+└─ figures/
+   ├─ figure01_mediation_effects.png
+   ├─ figure01_mediation_effects.pdf
+   ├─ figure02_path_model.png
+   └─ figure02_path_model.pdf
+```
+
 - 각 실습에서 승인한 수정만 `논문초고_6장.md`에 누적하여 반영하고 `논문초고_5장.md`는 수정하지 않습니다.
 
 ::: {.callout-warning title="원본과 수정본을 구분하세요"}
@@ -298,5 +308,5 @@ title: "6. 표와 그림"
 :::
 
 ::: {.callout-important title="다음 단계로 가져갈 산출물"}
-표·그림·수식의 형식과 연결을 확인한 [`논문초고_6장.md`](../downloads/ch06/논문초고_6장.md){download="논문초고_6장.md"}와 PNG·PDF 그림 파일을 함께 보존하세요. 옵시디언에서 계속 편집하려면 [`논문초고_6장.zip`](../downloads/ch06/논문초고_6장.zip){download="논문초고_6장.zip"}을 내려받아 폴더 구조를 유지한 채 압축을 해제하세요. 7장에서는 이 원고를 바탕으로 문헌 인용과 참고문헌을 정비합니다.
+표·그림·수식의 형식과 연결을 확인한 [`논문초고_6장.md`](../downloads/ch06/논문초고_6장.md){download="논문초고_6장.md"}와 [`figures.zip`](../downloads/ch06/figures.zip){download="figures.zip"}의 PNG·PDF 그림 파일을 함께 보존하세요. `논문초고_6장.md`와 `figures/`의 상대 위치를 유지해야 그림이 정상적으로 표시됩니다. 7장에서는 이 원고를 바탕으로 문헌 인용과 참고문헌을 정비합니다.
 :::
