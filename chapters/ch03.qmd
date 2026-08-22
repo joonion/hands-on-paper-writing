@@ -12,7 +12,18 @@ title: "3. 챗지피티와의 만남"
 
 ## 실습 준비
 
-- [3장 실습 기록지](../downloads/ch03/실습기록_3장.md){download="실습기록.md"}를 내려받습니다.
+- 가보르 뢰베이의 논문작성법 온라인 북을 PDF 파일로 내려받기 합니다.
+[PDF 내려받기](../downloads/ch03/obp.0235.pdf){download="opb_0235.pdf"}
+
+::: {.callout-important title="저작권 고지"}
+
+Gábor L. Lövei, Writing and Publishing Scientific Papers: A Primer for the Non-English Speaker, Open Book Publishers, 2021. \
+DOI: 10.11647/OBP.0235 \
+This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0). \
+본 사이트는 CC BY 4.0 라이선스 조건에 따라 출판사가 공개한 원본 PDF를 수정 없이 재배포합니다. 저작권은 원저작자에게 있습니다.
+
+:::
+
 - ChatGPT에서 이 장만 연습할 새 대화를 만듭니다. 여러 대화와 파일을 계속 사용할 수 있는 프로젝트 기능이 있다면 별도의 연습용 프로젝트를 만들어도 됩니다.
 - 3.1~3.6에서는 교재 예시를 사용하되 자신의 전공·학위 과정·연구 상황에 맞게 바꿉니다.
 - 3.8~3.9를 실제로 수행하려면 합법적으로 내려받은 공개 논문 PDF 세 편의 **복사본**을 `literature-practice` 폴더에 준비합니다. 원본과 실제 연구 폴더는 사용하지 않습니다.
