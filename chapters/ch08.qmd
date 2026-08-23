@@ -1,5 +1,7 @@
 ---
 title: "8. 인용과 참고문헌"
+pagetitle: "논문 인용·참고문헌과 Zotero 활용"
+description-meta: "Zotero와 BibTeX를 이용해 논문 원고의 인용 자리표시자를 검증하고 본문 인용과 참고문헌을 일관되게 연결합니다."
 ---
 
 ## 실습 목표

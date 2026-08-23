@@ -1,5 +1,7 @@
 ---
 title: "4. 논문 초안 작성"
+pagetitle: "ChatGPT로 논문 초안 작성하기"
+description-meta: "연구기획, 문헌조사, 연구설계와 자료분석 산출물을 연결하여 ChatGPT로 논문 초안의 각 장을 작성하는 실습입니다."
 ---
 
 ## 실습 목표

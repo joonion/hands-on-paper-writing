@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  post-render:
+    - python scripts/normalize-sitemap.py
   render:
     - "*.qmd"
     - "chapters/*.qmd"
@@ -15,6 +17,10 @@ filters:
 website:
   title: "ChatGPT를 활용한 윤리적 논문 작성법"
   description: "생성형 AI 시대의 책임 있는 논문 쓰기"
+  site-url: "https://joonion.github.io/hands-on-paper-writing/"
+  repo-url: "https://github.com/joonion/hands-on-paper-writing"
+  open-graph: true
+  twitter-card: true
   navbar:
     background: primary
     left:
@@ -53,6 +59,7 @@ format:
   html:
     theme: cosmo
     css: assets/styles.css
+    canonical-url: true
     include-after-body:
       - assets/prompt-components.html
     toc: true
