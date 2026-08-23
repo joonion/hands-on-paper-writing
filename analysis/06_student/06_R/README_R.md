@@ -61,7 +61,7 @@ Rscript 06_R/run_full_analysis.R
 
 1. 패키지 확인
 2. `analysis_pipeline.R`로 원자료 결합·정제·통계 분석
-3. `05_tables_figures.R`로 검증된 분석 출력에서 제출용 표와 그림 생성
+3. `tables_figures.R`로 검증된 분석 출력에서 제출용 표와 그림 생성
 
 주요 결과 위치는 다음과 같습니다.
 

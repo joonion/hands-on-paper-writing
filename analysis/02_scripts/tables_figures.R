@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 
 # ==============================================================================
-# 05_tables_figures.R
+# tables_figures.R
 # 검증된 분석 출력 CSV -> 최종 표·그림 재생산
 #
 # 원칙
@@ -11,10 +11,10 @@
 #   - 결과 파일은 실행 시각별 새 폴더에 저장하여 덮어쓰지 않는다.
 #
 # 실행 예
-#   Rscript 02_scripts/05_tables_figures.R /path/to/project
+#   Rscript 02_scripts/tables_figures.R /path/to/project
 #
 # 선택적 두 번째 인수: analysis_pipeline.R의 특정 run 폴더
-#   Rscript 02_scripts/05_tables_figures.R /path/to/project \
+#   Rscript 02_scripts/tables_figures.R /path/to/project \
 #     /path/to/project/04_outputs/run_20260819_170000
 # ==============================================================================
 

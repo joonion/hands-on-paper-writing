@@ -43,7 +43,7 @@ rscript <- file.path(R.home("bin"), "Rscript")
 
 check_script <- file.path(r_dir, "check_packages.R")
 pipeline_script <- file.path(r_dir, "analysis_pipeline.R")
-tables_script <- file.path(r_dir, "05_tables_figures.R")
+tables_script <- file.path(r_dir, "tables_figures.R")
 
 required_scripts <- c(check_script, pipeline_script, tables_script)
 missing_scripts <- required_scripts[!file.exists(required_scripts)]

@@ -15,9 +15,9 @@ title: "12. 자료 분석"
 
 - 최신 `연구기획.md`와 `연구설계.md`가 이미 같은 옵시디언 볼트에 있다면 다시 다운로드하지 않고 현재 파일을 확인합니다.
 - 새로 시작하거나 예시 산출물이 필요한 경우 다음 파일을 다운로드합니다.
-    - [9장 산출물 `연구기획.md`](../downloads/ch09/연구기획_9장.md){download="연구기획.md"}
-    - [11장 산출물 `연구설계.md`](../downloads/ch11/연구설계_11장.md){download="연구설계.md"}
-    - [12장 학생용 실습자료 `ch12-practice.zip`](../downloads/ch12/ch12-practice.zip){download="ch12-practice.zip"}
+    - [9장 산출물 `연구기획.md`](../downloads/연구기획_9장.md){download="연구기획.md"}
+    - [11장 산출물 `연구설계.md`](../downloads/연구설계_11장.md){download="연구설계.md"}
+    - [12장 학생용 실습자료 `ch12-practice.zip`](../downloads/ch12-practice.zip){download="ch12-practice.zip"}
 - jamovi 경로를 선택하면 [jamovi 공식 사이트](https://www.jamovi.org/download.html)에서 자신의 운영체제에 맞는 jamovi를 설치합니다.
 - R 경로를 선택하면 R과 Positron 또는 RStudio를 준비합니다. 필요한 패키지는 압축 해제 후 `06_R/check_packages.R`로 확인합니다.
 - `ch12-practice.zip`을 옵시디언 볼트 아래에 압축 해제합니다.

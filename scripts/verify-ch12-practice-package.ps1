@@ -4,7 +4,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $repo = [System.IO.Path]::GetFullPath($RepoRoot)
-$zipPath = Join-Path $repo 'downloads\ch12\ch12-practice.zip'
+$zipPath = Join-Path $repo 'downloads\ch12-practice.zip'
 $tempRoot = Join-Path ([System.IO.Path]::GetTempPath()) ("verify-ch12-" + [guid]::NewGuid().ToString('N'))
 
 if (-not (Test-Path -LiteralPath $zipPath -PathType Leaf)) {
@@ -40,7 +40,7 @@ try {
         '06_R\run_quick_analysis.R',
         '06_R\run_full_analysis.R',
         '06_R\analysis_pipeline.R',
-        '06_R\05_tables_figures.R'
+        '06_R\tables_figures.R'
     )
     foreach ($relativePath in $requiredFiles) {
         if (-not (Test-Path -LiteralPath (Join-Path $packageRoot $relativePath) -PathType Leaf)) {

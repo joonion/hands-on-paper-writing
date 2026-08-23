@@ -21,7 +21,7 @@ title: "10. 문헌 조사"
 
 - 9장에서 작성한 `연구기획.md` 파일을 프로젝트 소스에 추가합니다.
 - 이 실습의 예시를 사용하려면 아래 파일을 다운로드하여 소스에 추가합니다.
-  - [`연구기획.md`](../downloads/ch09/연구기획_9장.md){download="연구기획.md"}
+  - [`연구기획.md`](../downloads/연구기획_9장.md){download="연구기획.md"}
 - 파일을 소스에 추가한 후 문헌조사에서 확인할 사항을 확인합니다.
 
 ::: {.prompt}
@@ -128,8 +128,8 @@ title: "10. 문헌 조사"
 
 5. 다음 논문 목록 파일을 열어서 모든 논문 항목을 하나씩 조테로에 추가하세요.
 
-  - [`references.md`](../downloads/ch10/references.md){download="references.md"}
-  - (직접 실습을 하지 못한 경우에) 모든 항목을 추가한 .bib 파일 다운로드: [`references.bip`](../downloads/ch10/references.bib){download="references.bib"}
+  - [`references.md`](../downloads/references.md){download="references.md"}
+  - (직접 실습을 하지 못한 경우에) 모든 항목을 추가한 .bib 파일 다운로드: [`references.bip`](../downloads/references.bib){download="references.bib"}
 
 ## 10.3 선행연구 확인하고 비교하기 {#step-10-3}
 
@@ -307,5 +307,5 @@ LCU와 SRL의 측정시점을 분리해야 하는 이유를 설명해줘. baseli
 ::: {.callout-important title="11장으로 이동하기 전에"}
 완성한 `문헌조사.md`와 문헌조사 결과를 반영한 최신 `연구기획.md`를 프로젝트 소스에 준비하세요. 11장에서는 두 파일의 일치 여부를 확인한 뒤 연구 목적, 변수의 조작적 정의와 연구방법을 구체화합니다.
 
-[10장 산출물 `문헌조사.md` 내려받기](../downloads/ch10/문헌조사_10장.md){download="문헌조사.md"}
+[10장 산출물 `문헌조사.md` 내려받기](../downloads/문헌조사_10장.md){download="문헌조사.md"}
 :::

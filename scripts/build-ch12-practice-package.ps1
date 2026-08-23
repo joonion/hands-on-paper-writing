@@ -4,7 +4,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $repo = [System.IO.Path]::GetFullPath($RepoRoot)
-$downloadDir = Join-Path $repo 'downloads\ch12'
+$downloadDir = Join-Path $repo 'downloads'
 $outputZip = Join-Path $downloadDir 'ch12-practice.zip'
 $tempRoot = Join-Path ([System.IO.Path]::GetTempPath()) ("ch12-practice-" + [guid]::NewGuid().ToString('N'))
 $packageRoot = Join-Path $tempRoot 'ch12-practice'
@@ -26,7 +26,7 @@ $copies = @(
     @{ Source = 'analysis\06_student\06_R\run_quick_analysis.R'; Destination = '06_R\run_quick_analysis.R' },
     @{ Source = 'analysis\06_student\06_R\run_full_analysis.R'; Destination = '06_R\run_full_analysis.R' },
     @{ Source = 'analysis\02_scripts\analysis_pipeline.R'; Destination = '06_R\analysis_pipeline.R' },
-    @{ Source = 'analysis\02_scripts\tables_figures.R'; Destination = '06_R\05_tables_figures.R' }
+    @{ Source = 'analysis\02_scripts\tables_figures.R'; Destination = '06_R\tables_figures.R' }
 )
 
 try {
