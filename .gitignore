@@ -1,7 +1,10 @@
 /.quarto/
 /_site/
 /chapters/*_files/
+/chapters/*.html
 
 **/*.quarto_ipynb
 
 AGENTS.md
+
+/.codex_tmp/

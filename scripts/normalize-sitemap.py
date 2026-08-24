@@ -13,12 +13,20 @@ def main() -> None:
 
     ET.register_namespace("", NAMESPACE)
     tree = ET.parse(SITEMAP)
+    urlset = tree.getroot()
     locations = tree.findall(f".//{{{NAMESPACE}}}loc")
     index_url = f"{SITE_URL}index.html"
     index_locations = [location for location in locations if location.text == index_url]
     root_locations = [location for location in locations if location.text == SITE_URL]
 
-    if len(index_locations) == 1 and not root_locations:
+    if len(index_locations) == 1 and len(root_locations) <= 1:
+        if root_locations:
+            root_entry = next(
+                entry
+                for entry in urlset.findall(f"{{{NAMESPACE}}}url")
+                if entry.find(f"{{{NAMESPACE}}}loc") is root_locations[0]
+            )
+            urlset.remove(root_entry)
         index_locations[0].text = SITE_URL
         tree.write(SITEMAP, encoding="utf-8", xml_declaration=True)
         return

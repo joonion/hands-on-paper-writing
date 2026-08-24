@@ -12,7 +12,7 @@ toc: false
 ## 강의용 슬라이드
 
 이 교재의 강의용 슬라이드를 PDF 파일로 제공합니다. 
-[강의용 슬라이드 내려받기](../downloads/lecture_slides_0826.pdf){download="ChatGPT를_활용한_윤리적_논문작성법_배준현.pdf"}
+[강의용 슬라이드 내려받기](../downloads/lecture_slides_260826.pdf){download="ChatGPT를_활용한_윤리적_논문작성법_배준현.pdf"}
 
 ## 실습 가이드의 구성
 
