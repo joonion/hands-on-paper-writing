@@ -1,3 +1,9 @@
+---
+title: "1. 생성형 AI의 이해"
+pagetitle: "생성형 AI의 원리와 한계 이해하기"
+description-meta: "생성형 AI와 원리와 한계를 이해하기 위해, LLM, Hallucination, RAG, Reasoning, AI Agent를 차례로 실습힙니다."
+---
+
 ## 실습 목표
 
 이 장에서는 ChatGPT를 직접 사용해 보면서 생성형 AI가 어떻게 답을 만들고, 무엇을 잘하며, 어디에서 오류를 일으킬 수 있는지 확인합니다.
