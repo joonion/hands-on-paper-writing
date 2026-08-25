@@ -94,8 +94,8 @@ description-meta: "연구 질문에 맞는 문헌을 탐색·선별·검증하�
   - 원문 PDF가 저장되지 않는 경우에는 직접 다운로드하여 추가하면 됩니다.
 
   - Zhao, Y., Chen, J., Dai, W., & Gu, Y. (2026). Learning-centred use of generative AI and later academic functioning: a baseline-adjusted three-wave panel study. Frontiers in Psychology, 17, 1878514.
-  - Öztürk (2022), “The effect of self-regulated programming learning on undergraduate students’ academic performance and motivation.” Interactive Technology and Smart Education, 19(3), 319-337. DOI: 10.1108/ITSE-04-2021-0074.
-  - Xie et al. (2025), “ChatGPT-enhanced self-regulated learning in programming education: impacts on motivation, self-efficacy, and learning outcomes.” Interactive Learning Environments. DOI: 10.1080/10494820.2025.2559919.
+  - Öztürk (2021), “The effect of self-regulated programming learning on undergraduate students’ academic performance and motivation.” Interactive Technology and Smart Education, 19(3), 319-337. DOI: 10.1108/ITSE-04-2021-0074.
+  - Wang et al. (2025), “ChatGPT-enhanced self-regulated learning in programming education: impacts on motivation, self-efficacy, and learning outcomes.” Interactive Learning Environments. DOI: 10.1080/10494820.2025.2559919.
 
 2. 아래에 제시된 국내 논문들을 검색해서 Zotero Collection에 추가하세요.
 
@@ -117,7 +117,7 @@ description-meta: "연구 질문에 맞는 문헌을 탐색·선별·검증하�
 4. BibTeX 파일 자동 내보내기로 하세요.
 
   - Collection에서 오른쪽 마우 클릭 후, Better BibTeX -> Export Collection
-  - Better BibTeX + Keep Update 선택하면 자동 내보내기 됩니다.
+  - Better BibTeX + Keep updated를 선택하면 자동 내보내기 됩니다.
   - references.bib 로 저장하고, 새로운 논문을 추가한 후 해당 파일을 다시 열어서 추가한 논문의 서지 정보가 들어가 있는지 확인합니다.
   - references.bib 파일에서 한글 저자의 인용키가 어떻게 생성되는지도 확인하세요.
 
@@ -296,5 +296,5 @@ LCU와 SRL의 측정시점을 분리해야 하는 이유를 설명해줘. baseli
 1. 생성형 AI 활용방식을 일반적·탐색적으로 다루지 않고 LCU로 확정
 2. 학습 관련 요인을 SRL로 확정하고 매개변수 역할을 부여
 3. 연구질문과 가설을 LCU → SRL → Achievement 의 세 경로로 재구성
-4. 중간고사 성적은 통제변수로 사용하지 않고, 기말고사만 최종 종속변수로 사용
+4. 중간고사 점수를 통제변수로 사용하고, 기말고사 점수는 종속변수로 사용
 :::

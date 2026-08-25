@@ -3,6 +3,7 @@ Chen, S., & Cheung, A. C. K. (2025). Effect of generative artificial intelligenc
 Fan, Y., Tang, L., Le, H., Shen, K., Tan, S., Zhao, Y., Shen, Y., Li, X., & Gašević, D. (2025). Beware of metacognitive laziness: Effects of generative artificial intelligence on learning motivation, processes, and performance. British Journal of Educational Technology, 56(2), 489–530. https://doi.org/10.1111/bjet.13544
 Güner, H., & Er, E. (2025). AI in the classroom: Exploring students’ interaction with ChatGPT in programming learning. Education and Information Technologies, 30(9), 12681–12707. https://doi.org/10.1007/s10639-025-13337-7
 Han, X., Peng, H., & Liu, M. (2025). The impact of GenAI on learning outcomes: A systematic review and meta-analysis of experimental studies. Educational Research Review, 48, 100714. https://doi.org/10.1016/j.edurev.2025.100714
+Hashmi, Z. F., Iqbal, J., Asghar, M. Z., & Abid, M. N. (2026). Generative AI tool usage and perceived self-regulated learning: The mediating roles of technological self-efficacy and cognitive offloading in blended learning. Humanities and Social Sciences Communications. https://doi.org/10.1057/s41599-026-07924-3
 Öztürk, M. (2021). The effect of self-regulated programming learning on undergraduate students’ academic performance and motivation. Interactive Technology and Smart Education, 19(3), 319–337. https://doi.org/10.1108/ITSE-04-2021-0074
 Pintrich, P. R. (2004). A Conceptual Framework for Assessing Motivation and Self-Regulated Learning in College Students. Educational Psychology Review, 16(4), 385–407. https://doi.org/10.1007/s10648-004-0006-x
 Stojanov, A., Liu, Q., & Koh, J. H. L. (2024). University students’ self-reported reliance on ChatGPT for learning: A latent profile analysis. Computers and Education: Artificial Intelligence, 6, 100243. https://doi.org/10.1016/j.caeai.2024.100243
@@ -16,6 +17,7 @@ Zimmerman, B. J. (2002). Becoming a Self-Regulated Learner: An Overview. Theory 
 백다은, 손완상, 송지훈, & 유명현. (2024). 생성형 AI(Generative AI) 활용 학습 효과 메타분석. 교육정보미디어연구, 30(4), 1261–1285. https://doi.org/10.15833/KAFEIAM.30.4.1261
 석진이. (2010). 자기조절학습 능력이 EFL 대학생의 영어 성취도에 미치는 영향. 현대영어교육, 11(1), 167–190.
 심현철, & 김경백. (2026). 중학생 대상 생성형 AI 기반 프로그래밍 수업의 효과 분석. 컴퓨터교육학회 논문지, 29(3), 50–61. https://doi.org/10.32431/kace.2026.29.3.006
+유경선, & 안성진. (2024). 대학생의 생성형 인공지능 활용 교육이 학업적 자기 효능감, 메타인지, 문제해결 능력에 미치는 영향. 컴퓨터교육학회 논문지, 27(4), 13–20.
 윤은주, & 배대권. (2024). 생성형 AI 활용 PBL 융합수업에서 정의적 요소와 자기조절학습이 인지된 성취도에 미치는 효과에 관한 연구. 현대영미어문학, 42(2), 125–150. https://doi.org/10.21084/jmball.2024.05.42.2.125
 이은희, & 박매란. (2023). 대학생들의 영어학습에서 자기조절학습(SRL)능력과 ChatGPT에 대한 인식 및 활용 목적 간의 관계 연구. 영어어문교육, 29(4), 71–99.
 정효경, 박하영, 정다현, 김준원, & 정수정. (2025). 대학 수업에서의 ChatGPT 활용: 국내 연구에 대한 체계적 문헌고찰. 교육혁신연구, 35(3), 77–106.
