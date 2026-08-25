@@ -124,7 +124,7 @@ description-meta: "연구 질문에 맞는 문헌을 탐색·선별·검증하�
 5. 다음 논문 목록 파일을 열어서 모든 논문 항목을 하나씩 Zotero에 추가하세요.
 
   - [`references.md`](../downloads/references.md){download="references.md"}
-  - (직접 실습을 하지 못한 경우에) 모든 항목을 추가한 .bib 파일 다운로드: [`references.bip`](../downloads/references.bib){download="references.bib"}
+  - (직접 실습을 하지 못한 경우에) 모든 항목을 추가한 .bib 파일 다운로드: [`references.bib`](../downloads/references.bib){download="references.bib"}
 
 ## 10.3 선행연구 확인하고 비교하기 {#step-10-3}
 
