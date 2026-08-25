@@ -8,6 +8,7 @@ project:
     - "chapters/*.qmd"
   resources:
     - "downloads/**"
+    - "google366ba2a4d4ce3d1d.html"
 
 lang: ko
 
