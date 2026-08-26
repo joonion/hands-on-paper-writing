@@ -17,6 +17,29 @@ body {
   line-height: 1.4;
 }
 
+pre {
+  background-color: #f6f7f8;
+  border: 1px solid #e2e4e7;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+}
+
+pre code {
+  color: #24292f;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* inline code */
+:not(pre) > code {
+  color: inherit;
+  background: none !important;
+  background-color: transparent;
+  padding: 0;
+}
+
 .prompt {
   position: relative;
   margin: 1.5rem 0;
@@ -123,6 +146,28 @@ body {
 
 .prompt-copy.copied {
   color: #216e39;
+}
+
+.quote {
+  margin: 2.5rem 1rem;
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  text-align: left;
+  white-space: normal;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.quote p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.quote p + p {
+  margin-top: 1rem;
 }
 
 @media print {

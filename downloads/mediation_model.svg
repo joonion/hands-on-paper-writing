@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+<defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L12,6 L0,12 Z" fill="#000"/>
+  </marker>
+  <style>
+    .box{fill:#fff;stroke:#000;stroke-width:2.2}
+    .label{font-family:"Noto Sans CJK KR","Malgun Gothic","Apple SD Gothic Neo",sans-serif;font-size:30px;font-weight:600;fill:#000}
+    .sub{font-family:"Times New Roman",serif;font-size:28px;fill:#000}
+    .path{fill:none;stroke:#000;stroke-width:2.4;marker-end:url(#arrow)}
+    .pathlabel{font-family:"Times New Roman",serif;font-size:34px;font-style:italic;fill:#000}
+    .note{font-family:"Noto Sans CJK KR","Malgun Gothic","Apple SD Gothic Neo",sans-serif;font-size:23px;fill:#000}
+  </style>
+</defs>
+
+<rect class="box" x="500" y="55" width="400" height="150" rx="8" ry="8"/>
+<text class="label" x="700" y="115" text-anchor="middle">
+  <tspan x="700">자기조절학습</tspan>
+  <tspan class="sub" x="700" dy="48">(SRL)</tspan>
+</text>
+
+<rect class="box" x="90" y="470" width="400" height="160" rx="8" ry="8"/>
+<text class="label" x="290" y="525" text-anchor="middle">
+  <tspan x="290">생성형 AI</tspan>
+  <tspan x="290" dy="42">학습중심 활용</tspan>
+  <tspan class="sub" x="290" dy="42">(LCU)</tspan>
+</text>
+
+<rect class="box" x="910" y="470" width="400" height="160" rx="8" ry="8"/>
+<text class="label" x="1110" y="535" text-anchor="middle">
+  <tspan x="1110">학업성취도</tspan>
+  <tspan class="sub" x="1110" dy="48">(Achievement)</tspan>
+</text>
+
+<path class="path" d="M390 470 L535 205"/>
+<path class="path" d="M865 205 L1010 470"/>
+<path class="path" d="M490 550 L910 550"/>
+
+<text class="pathlabel" x="450" y="330" text-anchor="middle">a</text>
+<text class="pathlabel" x="950" y="330" text-anchor="middle">b</text>
+<text class="pathlabel" x="700" y="525" text-anchor="middle">c′</text>
+
+<text class="note" x="700" y="710" text-anchor="middle">간접효과 = a × b</text>
+</svg>
