@@ -14,7 +14,7 @@ description-meta: "ChatGPT가 작성한 논문 초안의 문장, 문단, 절과 
 
 ## 실습 준비
 
-- 이 실습은 Obsidian에서 진행합니다. Obsidian이 설치되어 있지 않다면 다운로드하여 설치합니다.
+- 이 실습은 Obsidian에서 진행합니다. Obsidian이 설치되어 있지 않다면 내려받아 설치합니다.
 - 4장에서 완성한 [`논문초안.md`](../downloads/논문초안_4장.md){download="논문초안.md"}를 Obsidian에 추가합니다.
 - 수정하기 전에 `논문초안.md`를 `논문초고_5장.md`로 복사합니다.
 

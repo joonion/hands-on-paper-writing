@@ -22,7 +22,7 @@ description-meta: "연구 질문에 맞는 문헌을 탐색·선별·검증하�
 ## 실습 준비
 
 - 9장에서 작성한 `연구기획.md` 파일을 프로젝트 소스에 추가합니다.
-- 이 실습의 예시를 사용하려면 아래 파일을 다운로드하여 소스에 추가합니다.
+- 이 실습의 예시를 사용하려면 아래 파일을 내려받아 소스에 추가합니다.
   - [`연구기획.md`](../downloads/연구기획_9장.md){download="연구기획.md"}
 - 파일을 소스에 추가한 후 문헌조사에서 확인할 사항을 확인합니다.
 
@@ -91,7 +91,7 @@ description-meta: "연구 질문에 맞는 문헌을 탐색·선별·검증하�
   - Google Scholar에서 논문 제목으로 검색한 후, 출판사나 학술지의 논문 상세 페이지로 이동하여 Zotero Connector로 추가합니다.
   - Zotero Collection에서 해당 논문의 서지 정보가 잘 들어갔는지 확인하세요.
   - 주요 해외 학술지에서는 Zotero Connector로 서지정보를 가져올 수 있으며, 접근 권한이 있는 경우 원문 PDF가 함께 저장되기도 합니다.
-  - 원문 PDF가 저장되지 않는 경우에는 직접 다운로드하여 추가하면 됩니다.
+  - 원문 PDF가 저장되지 않는 경우에는 직접 내려받아 추가하면 됩니다.
 
   - Zhao, Y., Chen, J., Dai, W., & Gu, Y. (2026). Learning-centred use of generative AI and later academic functioning: a baseline-adjusted three-wave panel study. Frontiers in Psychology, 17, 1878514.
   - Öztürk (2021), “The effect of self-regulated programming learning on undergraduate students’ academic performance and motivation.” Interactive Technology and Smart Education, 19(3), 319-337. DOI: 10.1108/ITSE-04-2021-0074.
@@ -103,7 +103,7 @@ description-meta: "연구 질문에 맞는 문헌을 탐색·선별·검증하�
   - RISS에서 검색해서 상세 페이지에서 추가한 후, Zotero에서 Item Type을 확인하세요. 학술지 논문이 Web Page로 표시되면 삭제(Move Item to Trash) 후 다시 다른 곳에서 추가를 시도하세요.
   - KCI에서 검색해서 상세 페이지에서 추가한 후, Zotero에서 서지 정보를 확인하세요. 서지 정보가 영문으로 표시되면 삭제 후 다시 다른 곳에서 추가를 시도하세요.
   - 제목·저자·학술지명 등이 영문으로 입력되거나 잘못 입력되면 다른 학술DB에서 다시 추가해 보고, 가장 정확한 서지정보를 사용합니다.
-  - 원문 PDF 파일을 다운로드할 수 있는 학술DB를 찾아서 파일을 첨부하세요.
+  - 원문 PDF 파일을 내려받을 수 있는 학술DB를 찾아서 파일을 첨부하세요.
 
   - 진성희·유미나 (2024), 「생성형 AI 활용 학습에 대한 체계적 문헌 고찰 연구: 자기조절학습을 중심으로」, 『교육정보미디어연구』, 30(6), 1613-1634. DOI: 10.15833/KAFEIAM.30.6.1613
   - 김상연·정윤경 (2024), 「자기조절학습 프로그램이 학업성취에 주는 효과에 대한 메타분석」, 『교육심리연구』, 38(2), 253-284. DOI: 10.17286/KJEP.2024.38.2.06
@@ -124,7 +124,7 @@ description-meta: "연구 질문에 맞는 문헌을 탐색·선별·검증하�
 5. 다음 논문 목록 파일을 열어서 모든 논문 항목을 하나씩 Zotero에 추가하세요.
 
   - [`references.md`](../downloads/references.md){download="references.md"}
-  - (직접 실습을 하지 못한 경우에) 모든 항목을 추가한 .bib 파일 다운로드: [`references.bib`](../downloads/references.bib){download="references.bib"}
+  - (직접 실습을 하지 못한 경우에) 모든 항목을 추가한 .bib 파일 내려받기: [`references.bib`](../downloads/references.bib){download="references.bib"}
 
 ## 10.3 선행연구 확인하고 비교하기 {#step-10-3}
 

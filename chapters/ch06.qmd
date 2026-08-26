@@ -16,7 +16,7 @@ description-meta: "Markdown 논문 초안에 그림을 삽입하고 표의 구�
 
 ## 실습 준비
 
-- 프로젝트 소스에 다음 파일을 다운로드하여 추가합니다.
+- 프로젝트 소스에 다음 파일을 내려받아 추가합니다.
     - [5장 산출물 `논문초고_5장.md`](../downloads/논문초고_5장.md){download="논문초고_5장.md"}
     - [그림 파일 묶음 `figures.zip`](../downloads/figures.zip){download="figures.zip"}
 - `논문초고_5장.md`를 복제하여 `논문초고_6장.md`라는 작업 파일을 만듭니다.
