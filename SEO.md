@@ -14,9 +14,8 @@
 2. `scripts/verify-seo.ps1`을 실행한다.
 3. 제목·설명·canonical 중복, sitemap 누락과 깨진 내부 링크가 0건인지 확인한다.
 4. 공유 이미지, 이미지 대체 텍스트, manifest와 기기별 아이콘 검사가 통과하는지 확인한다.
-5. Lighthouse의 접근성·SEO·권장사항 기준을 충족하는지 확인한다.
-6. `main` 브랜치에 반영한 뒤 GitHub Pages 배포 작업이 성공했는지 확인한다.
-7. 공개 사이트의 홈페이지, 대표 장, `sitemap.xml`, `site.webmanifest`와 `404.html`을 직접 연다.
+5. `main` 브랜치에 반영한 뒤 GitHub Pages 배포 작업이 성공했는지 확인한다.
+6. 공개 사이트의 홈페이지, 대표 장, `sitemap.xml`, `site.webmanifest`와 `404.html`을 직접 연다.
 
 ## Google Search Console
 
