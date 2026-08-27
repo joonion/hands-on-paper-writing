@@ -17,6 +17,7 @@ filters:
 
 website:
   title: "ChatGPT를 활용한 윤리적 논문 작성법"
+  favicon: assets/favicon.svg
   description: "생성형 AI 시대의 책임 있는 논문 쓰기"
   site-url: "https://joonion.github.io/hands-on-paper-writing/"
   repo-url: "https://github.com/joonion/hands-on-paper-writing"

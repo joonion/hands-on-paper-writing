@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>말풍선과 확인 표시</title>
+  <path
+    fill="#2780e3"
+    d="M16 14h28a8 8 0 0 1 8 8v17a8 8 0 0 1-8 8H28l-12 8v-8a8 8 0 0 1-8-8V22a8 8 0 0 1 8-8Z"
+  />
+  <path
+    fill="none"
+    stroke="#e32636"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="6"
+    d="m38 23.5 7 7 13.5-16"
+  />
+</svg>

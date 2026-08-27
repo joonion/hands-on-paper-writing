@@ -1,7 +1,7 @@
 ---
 title: "ChatGPT를 활용한 윤리적 논문 작성법"
 subtitle: "생성형 AI 시대의 책임 있는 논문 쓰기"
-pagetitle: "ChatGPT 논문 작성 온라인 실습 가이드"
+pagetitle: "실습 안내: ChatGPT를 활용한 윤리적 논문 작성법"
 description-meta: "ChatGPT를 책임 있게 활용하여 연구 기획, 문헌 조사, 연구 설계, 자료 분석, 논문 작성을 실습하면서 한 편의 논문을 완성하는 온라인 실습 가이드입니다."
 page-layout: full
 toc: false
