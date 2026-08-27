@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#000"/>
+    </marker>
+    <style>
+      .box{fill:#fff;stroke:#000;stroke-width:2.4}
+      .label{font-family:"NanumSquare","Noto Sans CJK KR","Malgun Gothic",sans-serif;font-size:31px;font-weight:700;fill:#000}
+      .sub{font-family:"NanumSquare","Noto Sans CJK KR","Malgun Gothic",sans-serif;font-size:27px;font-weight:500;fill:#000}
+      .mainpath{fill:none;stroke:#000;stroke-width:3;marker-end:url(#arrow)}
+      .controlpath{fill:none;stroke:#000;stroke-width:2.1;marker-end:url(#arrow)}
+      .pathlabel{font-family:"Times New Roman",serif;font-size:32px;font-style:italic;fill:#000}
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="900" fill="#fff"/>
+
+  <!-- Main variables -->
+  <rect class="box" x="70" y="180" width="360" height="220" rx="10" ry="10"/>
+  <text class="label" x="250" y="255" text-anchor="middle">
+    <tspan x="250">생성형 AI</tspan>
+    <tspan x="250" dy="46">학습중심 활용</tspan>
+    <tspan class="sub" x="250" dy="48">(LCU T1)</tspan>
+  </text>
+
+  <rect class="box" x="620" y="180" width="360" height="220" rx="10" ry="10"/>
+  <text class="label" x="800" y="285" text-anchor="middle">
+    <tspan x="800">자기조절학습</tspan>
+    <tspan class="sub" x="800" dy="52">(SRL T2)</tspan>
+  </text>
+
+  <rect class="box" x="1170" y="180" width="360" height="220" rx="10" ry="10"/>
+  <text class="label" x="1350" y="282" text-anchor="middle">
+    <tspan x="1350">학업성취도</tspan>
+    <tspan class="sub" x="1350" dy="52">(기말고사 점수, T3)</tspan>
+  </text>
+
+  <!-- Primary paths -->
+  <path class="mainpath" d="M430 290 L620 290"/>
+  <path class="mainpath" d="M980 290 L1170 290"/>
+  <text class="pathlabel" x="525" y="266" text-anchor="middle">a₁</text>
+  <text class="pathlabel" x="1075" y="266" text-anchor="middle">b₁</text>
+
+  <!-- Direct path -->
+  <path class="mainpath" d="M430 235 C650 75, 950 75, 1170 235"/>
+  <text class="pathlabel" x="800" y="105" text-anchor="middle">c′</text>
+
+  <!-- Control variables -->
+  <rect class="box" x="300" y="650" width="360" height="150" rx="10" ry="10"/>
+  <text class="label" x="480" y="710" text-anchor="middle">
+    <tspan x="480">T1 자기조절학습</tspan>
+    <tspan class="sub" x="480" dy="50">(SRL T1)</tspan>
+  </text>
+
+  <rect class="box" x="940" y="650" width="320" height="150" rx="10" ry="10"/>
+  <text class="label" x="1100" y="710" text-anchor="middle">
+    <tspan x="1100">중간고사 점수</tspan>
+    <tspan class="sub" x="1100" dy="50">(T1)</tspan>
+  </text>
+
+  <!-- Control paths to SRL T2 -->
+  <path class="controlpath" d="M480 650 C500 565, 600 500, 700 400"/>
+  <path class="controlpath" d="M1100 650 C1040 555, 930 500, 900 400"/>
+
+  <!-- Control paths to Achievement T3 -->
+  <path class="controlpath" d="M600 650 C820 590, 1080 540, 1260 400"/>
+  <path class="controlpath" d="M1180 650 C1260 560, 1340 500, 1420 400"/>
+</svg>
