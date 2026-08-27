@@ -10,10 +10,10 @@ project:
     - "downloads/**"
     - "google366ba2a4d4ce3d1d.html"
     - "site.webmanifest"
-    - "assets/social-card.png"
-    - "assets/apple-touch-icon.png"
-    - "assets/icon-192.png"
-    - "assets/icon-512.png"
+    - "assets/images/social-card.png"
+    - "assets/icons/apple-touch-icon.png"
+    - "assets/icons/icon-192.png"
+    - "assets/icons/icon-512.png"
 
 lang: ko
 
@@ -22,13 +22,12 @@ filters:
 
 website:
   title: "ChatGPT를 활용한 윤리적 논문 작성법"
-  favicon: assets/favicon.svg
+  favicon: assets/icons/favicon.svg
   description: "생성형 AI 시대의 책임 있는 논문 쓰기"
-  image: "https://joonion.github.io/hands-on-paper-writing/assets/social-card.png"
+  image: "https://joonion.github.io/hands-on-paper-writing/assets/images/social-card.png"
   image-alt: "파란 말풍선과 빨간 체크 표시가 있는 ChatGPT를 활용한 윤리적 논문 작성법 온라인 실습 가이드"
   site-url: "https://joonion.github.io/hands-on-paper-writing/"
   repo-url: "https://github.com/joonion/hands-on-paper-writing"
-  repo-actions: [issue]
   repo-link-target: _blank
   open-graph:
     locale: ko_KR
@@ -39,8 +38,6 @@ website:
     left:
       - href: index.qmd
         text: 온라인 실습 가이드
-      - href: about.qmd
-        text: 사이트 소개
     tools:
       - icon: github
         href: https://github.com/joonion/hands-on-paper-writing
@@ -71,7 +68,7 @@ website:
           - href: chapters/ch11.qmd
           - href: chapters/ch12.qmd
   page-navigation: true
-  reader-mode: true
+  reader-mode: false
   back-to-top-navigation: true
   page-footer:
     left: "© 2026 Joonion Bae · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
@@ -87,12 +84,12 @@ website:
 format:
   html:
     theme: cosmo
-    css: assets/styles.css
+    css: assets/css/styles.css
     canonical-url: true
     include-in-header:
-      - assets/head.html
+      - assets/includes/head.html
     include-after-body:
-      - assets/prompt-components.html
+      - assets/includes/prompt-components.html
     toc: true
     toc-depth: 3
     code-copy: true

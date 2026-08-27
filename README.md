@@ -36,7 +36,11 @@ quarto preview
 ```text
 chapters/   장별 실습 안내 페이지
 prompts/    장별 프롬프트 원본
-assets/     스타일, 아이콘, 공유 이미지와 웹 구성요소
+assets/
+  css/      사이트 스타일
+  icons/    favicon과 모바일/PWA 아이콘
+  images/   공유 이미지
+  includes/ 공통 HTML 구성요소
 filters/    프롬프트 표시를 처리하는 Quarto 필터
 about.qmd   사이트 목적, 운영 원칙과 개정 정보
 index.qmd   온라인 가이드 시작 페이지

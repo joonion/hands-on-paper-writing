@@ -16,9 +16,9 @@ $errors = [System.Collections.Generic.List[string]]::new()
 $pageResults = @()
 $imagesMissingAlt = 0
 $downloadLinksChecked = 0
-$expectedSocialImage = ([uri]::new($baseUri, 'assets/social-card.png')).AbsoluteUri
+$expectedSocialImage = ([uri]::new($baseUri, 'assets/images/social-card.png')).AbsoluteUri
 $expectedManifest = ([uri]::new($baseUri, 'site.webmanifest')).AbsoluteUri
-$expectedAppleTouchIcon = ([uri]::new($baseUri, 'assets/apple-touch-icon.png')).AbsoluteUri
+$expectedAppleTouchIcon = ([uri]::new($baseUri, 'assets/icons/apple-touch-icon.png')).AbsoluteUri
 
 function Get-PngDimensions {
     param([Parameter(Mandatory)][string]$Path)
@@ -225,10 +225,10 @@ else {
 }
 
 $expectedPngAssets = @{
-    'assets/social-card.png' = @(1200, 630)
-    'assets/apple-touch-icon.png' = @(180, 180)
-    'assets/icon-192.png' = @(192, 192)
-    'assets/icon-512.png' = @(512, 512)
+    'assets/images/social-card.png' = @(1200, 630)
+    'assets/icons/apple-touch-icon.png' = @(180, 180)
+    'assets/icons/icon-192.png' = @(192, 192)
+    'assets/icons/icon-512.png' = @(512, 512)
 }
 foreach ($assetEntry in $expectedPngAssets.GetEnumerator()) {
     $assetPath = Join-Path $siteRoot $assetEntry.Key

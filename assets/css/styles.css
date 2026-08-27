@@ -22,9 +22,9 @@ button:focus-visible,
 
 .home-page #title-block-header {
   position: relative;
-  min-height: 18rem;
+  min-height: 10rem;
   margin-bottom: 2rem;
-  padding: 3.5rem 17rem 3.5rem 3.5rem;
+  padding: 2.5rem 3rem 2.5rem 14rem;
   overflow: hidden;
   border: 1px solid #d8e6f5;
   border-radius: 24px;
@@ -34,10 +34,11 @@ button:focus-visible,
 .home-page #title-block-header::after {
   position: absolute;
   top: 50%;
-  right: 3.25rem;
-  width: 12rem;
-  height: 12rem;
-  background: url("favicon.svg") center / contain no-repeat;
+  right: auto;
+  left: 3rem;
+  width: 8rem;
+  height: 8rem;
+  background: url("../icons/favicon.svg") center / contain no-repeat;
   content: "";
   transform: translateY(-50%);
 }
@@ -51,14 +52,14 @@ button:focus-visible,
 .home-page #title-block-header h1 {
   max-width: 48rem;
   margin-bottom: 1rem;
-  font-size: clamp(2.25rem, 5vw, 3.65rem);
+  font-size: clamp(2.25rem, 5vw, 3rem);
   letter-spacing: -0.035em;
   line-height: 1.18;
 }
 
 .home-page #title-block-header .subtitle {
   color: #52606f;
-  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
 }
 
 .home-intro {
@@ -104,39 +105,31 @@ button:focus-visible,
   flex-direction: column;
   min-height: 100%;
   padding: 1.6rem;
-  border: 1px solid #dfe5ec;
+  border: 1px solid #c9def2;
   border-radius: 16px;
-  background: #fff;
+  background: #f3f8fe;
   box-shadow: 0 8px 26px rgb(31 59 92 / 8%);
-  transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+  transition: background-color 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
 }
 
 .guide-card:hover,
 .guide-card:focus-within {
+  background: #eaf3fd;
   border-color: #9fc7ef;
   box-shadow: 0 12px 32px rgb(31 59 92 / 14%);
   transform: translateY(-3px);
 }
 
-.guide-card-number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.35rem;
-  height: 2.35rem;
-  margin-bottom: 1rem;
-  border-radius: 50%;
-  background: #eaf3fd;
-  color: #1f69b3;
-  font-weight: 700;
-}
-
 .guide-card h3 {
-  margin-top: 0;
+  margin: 0 0 0.9rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.35;
 }
 
 .guide-card h3 a {
-  color: #24292f;
+  color: #175f9f;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -343,7 +336,8 @@ pre code {
 
   .home-page #title-block-header::after {
     top: 1rem;
-    right: 1rem;
+    right: auto;
+    left: 1rem;
     width: 6.5rem;
     height: 6.5rem;
     opacity: 0.18;
