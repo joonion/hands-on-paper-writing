@@ -10,7 +10,7 @@
 
 ## 2. 권장 폴더 구조
 
-```text
+```txt
 project/
 ├── 00_protocol/
 │   ├── 연구기획.md

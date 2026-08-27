@@ -180,6 +180,28 @@ pre code {
   overflow-wrap: anywhere;
 }
 
+/* Copyable plain-text code blocks */
+.code-copy-outer-scaffold > div.sourceCode:has(> pre.sourceCode.txt) {
+  margin: 0 0 1rem;
+  background-color: #f6f7f8;
+  border: 1px solid #e2e4e7;
+  border-radius: 8px;
+}
+
+pre.sourceCode.txt {
+  margin: 0;
+  padding: 1rem 3rem 1rem 1.2rem;
+  background: transparent;
+  border: 0;
+}
+
+pre.sourceCode.txt > code.sourceCode,
+pre.sourceCode.txt > code.sourceCode > span {
+  color: #24292f;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
 /* inline code */
 :not(pre) > code {
   color: inherit;

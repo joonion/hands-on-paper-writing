@@ -35,7 +35,7 @@
 
 이 사이트는 `joonion.github.io`의 `/hands-on-paper-writing/` 하위 경로에 있다. 따라서 이 저장소의 출력 루트에 `robots.txt`가 생성되더라도 공개 주소는 `/hands-on-paper-writing/robots.txt`이며, 호스트 루트의 robots 파일로 사용되지 않는다. 호스트 루트 파일은 `joonion/joonion.github.io` 저장소의 `gh-pages` 브랜치에서 관리한다. 실습 사이트의 sitemap을 배포한 뒤 루트 `robots.txt`에 다음 두 항목을 유지한다.
 
-```text
+```txt
 Sitemap: https://joonion.github.io/sitemap.xml
 Sitemap: https://joonion.github.io/hands-on-paper-writing/sitemap.xml
 ```

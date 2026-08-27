@@ -24,7 +24,7 @@ description-meta: "합성자료를 사용하여 데이터 정리, 기술통계, 
 - R 경로를 선택하면 R과 Positron 또는 RStudio를 준비합니다. 필요한 패키지는 압축 해제 후 `06_R/check_packages.R`로 확인합니다.
 - `ch12-practice.zip`을 Obsidian 볼트 아래에 압축 해제합니다.
 
-```text
+```txt
 Obsidian 볼트/
 ├─ 연구기획.md
 ├─ 연구설계.md

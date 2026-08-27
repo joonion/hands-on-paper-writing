@@ -33,7 +33,7 @@ quarto preview
 
 ## 프로젝트 구조
 
-```text
+```txt
 chapters/   장별 실습 안내 페이지
 prompts/    장별 프롬프트 원본
 assets/

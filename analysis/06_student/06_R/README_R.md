@@ -65,7 +65,7 @@ Rscript 06_R/run_full_analysis.R
 
 주요 결과 위치는 다음과 같습니다.
 
-```text
+```txt
 ch12-practice/
 ├─ 03_derived/run_실행시각/       # 분석용 자료와 처리 감사표
 ├─ 04_outputs/run_실행시각/       # 모형, 통계표와 진단 결과
