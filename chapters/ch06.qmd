@@ -2,6 +2,8 @@
 title: "6. 표와 그림"
 pagetitle: "논문 표와 그림 작성 및 해석"
 description-meta: "Markdown 논문 초안에 그림을 삽입하고 표의 구조를 수정한 뒤, 표와 그림의 핵심 결과를 본문에서 정확하게 설명하는 실습입니다."
+image: "https://joonion.github.io/hands-on-paper-writing/assets/social-card.png"
+image-alt: "파란 말풍선과 빨간 체크 표시가 있는 ChatGPT를 활용한 윤리적 논문 작성법 온라인 실습 가이드"
 ---
 
 ## 실습 목표
@@ -50,7 +52,7 @@ Obsidian 볼트/
 
 먼저 제3장의 연구 설계 부분에 연구모형 그림을 하나 추가해 보도록 하겠습니다. 추가할 그림은 아래와 같이 연구모형을 도식화한 SVG 파일입니다.
 
-![SVG 포맷으로 그린 연구 모형](../downloads/figures/figure01_mediation_model.svg){#fig-mediation-model width=60%}
+![SVG 포맷으로 그린 연구 모형](../downloads/figures/figure01_mediation_model.svg){#fig-mediation-model fig-alt="생성형 AI 학습중심 활용이 자기조절학습을 거쳐 학업성취도에 영향을 미치는 매개 모형" width=60%}
 
 이 그림을 다음과 같이 `논문초고.md` 파일에 추가할 수 있습니다.
 

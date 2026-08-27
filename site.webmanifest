@@ -1,0 +1,25 @@
+{
+  "name": "ChatGPT를 활용한 윤리적 논문 작성법",
+  "short_name": "윤리적 논문 작성법",
+  "description": "생성형 AI 시대의 책임 있는 논문 쓰기를 위한 온라인 실습 가이드",
+  "lang": "ko",
+  "start_url": "/hands-on-paper-writing/",
+  "scope": "/hands-on-paper-writing/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2780e3",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

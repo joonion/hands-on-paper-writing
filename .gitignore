@@ -10,3 +10,5 @@ SEO.md
 
 /.codex_tmp/
 /tmp/
+/.lighthouseci/
+/.lighthouseci-reports/

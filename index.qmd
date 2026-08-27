@@ -5,52 +5,72 @@ pagetitle: "실습 안내: ChatGPT를 활용한 윤리적 논문 작성법"
 description-meta: "ChatGPT를 책임 있게 활용하여 연구 기획, 문헌 조사, 연구 설계, 자료 분석, 논문 작성을 실습하면서 한 편의 논문을 완성하는 온라인 실습 가이드입니다."
 page-layout: full
 toc: false
+format:
+  html:
+    body-classes: home-page
 ---
 
-이 사이트는 《ChatGPT를 활용한 윤리적 논문 작성법》 강의를 위한 온라인 실습 가이드입니다. ChatGPT를 책임 있게 활용하여 연구 기획, 문헌 조사, 연구 설계, 자료 분석, 논문 작성의 전 과정을 실습하면서 한 편의 논문을 완성합니다. 단순히 ChatGPT에게 논문을 대신 쓰게 하는 것이 아니라, 연구자가 각 단계에서 판단하고 검증하며 최종 결과에 책임지는 방법을 익히는 데 초점을 두었습니다.
+::: {.home-intro}
+이 사이트는 《ChatGPT를 활용한 윤리적 논문 작성법》 강의를 위한 온라인 실습 가이드입니다. 생성형 AI에게 논문을 대신 쓰게 하는 것이 아니라, 연구자가 각 단계에서 판단하고 검증하며 최종 결과에 책임지는 방법을 익힙니다.
+:::
 
-## 강의용 슬라이드
+::: {.home-actions}
+[1장부터 시작하기](chapters/ch01.qmd){.btn .btn-primary .btn-lg role="button"}
 
-강의용 슬라이드를 PDF 파일로 내려받을 수 있습니다.
+[강의자료 내려받기](downloads/lecture_slides_260826.pdf){.btn .btn-outline-primary .btn-lg role="button" download="ChatGPT를_활용한_윤리적_논문작성법_배준현.pdf"}
+:::
 
-[강의자료 내려받기](downloads/lecture_slides_260826.pdf){download="ChatGPT를_활용한_윤리적_논문작성법_배준현.pdf"}
+## 한 편의 논문을 완성하는 세 단계
 
-## 온라인 실습 가이드의 구성
-
-::: {.grid}
+::: {.grid .guide-card-grid}
 
 ::: {.g-col-12 .g-col-md-4}
+::: {.guide-card}
+<div class="guide-card-number" aria-hidden="true">1</div>
 
 ### [제1부. 생성형 AI](chapters/ch01.qmd)
 
-제1부에서는 생성형 AI의 작동 원리와 한계를 이해하고, 연구 윤리 원칙을 점검하며, ChatGPT와 효과적으로 협업하기 위한 대화 방법을 연습합니다.
+생성형 AI의 원리와 한계를 이해하고 연구 윤리를 점검한 뒤, ChatGPT와 효과적으로 협업하는 대화 방법을 연습합니다.
 
+[제1부 시작하기 →](chapters/ch01.qmd){.guide-card-link}
+:::
 :::
 
 ::: {.g-col-12 .g-col-md-4}
+::: {.guide-card}
+<div class="guide-card-number" aria-hidden="true">2</div>
 
 ### [제2부. 논문 작성](chapters/ch04.qmd)
 
-제2부에서는 먼저 완성된 연구 산출물이 있다고 가정하고 논문 초안을 빠르게 작성합니다. 이어서 초안을 수정하고 재구성하면서 한 편의 논문을 완성하는 과정을 실습합니다.
+완성된 연구 산출물을 바탕으로 논문 초안을 작성하고, 수정과 재구성을 거쳐 한 편의 논문으로 발전시킵니다.
 
+[제2부 시작하기 →](chapters/ch04.qmd){.guide-card-link}
+:::
 :::
 
 ::: {.g-col-12 .g-col-md-4}
+::: {.guide-card}
+<div class="guide-card-number" aria-hidden="true">3</div>
 
 ### [제3부. 논문 연구](chapters/ch09.qmd)
 
-제3부에서는 제2부에서 사용한 연구 산출물을 만들어 봅니다. 연구 기획, 문헌 조사, 연구 설계, 자료 분석을 차례대로 수행하면서 논문 작성에 필요한 연구 산출물을 직접 완성합니다.
+연구 기획, 문헌 조사, 연구 설계, 자료 분석을 차례로 수행하며 논문 작성에 필요한 연구 산출물을 직접 완성합니다.
+
+[제3부 시작하기 →](chapters/ch09.qmd){.guide-card-link}
+:::
 :::
 
 :::
 
 ## 온라인 실습 가이드 이용 방법
 
-1. 각 장의 실습 목표와 실습 준비물을 확인합니다.
-2. 제시된 프롬프트를 복사하여 ChatGPT에게 질문합니다.
-3. ChatGPT의 답변을 꼼꼼히 읽으며 각 장에서 요구하는 산출물을 작성합니다.
-4. 처음에는 사이트에서 제공하는 예시 산출물을 활용하여 실습합니다.
-5. 이후 자신의 연구 내용을 반영하여 각 장의 산출물을 직접 만들어 봅니다.
+::: {.practice-steps}
+1. 각 장의 실습 목표와 준비 사항을 확인합니다.
+2. 제시된 프롬프트를 복사하여 자신의 연구 주제에 맞게 수정합니다.
+3. ChatGPT의 답변을 비판적으로 검토하며 필요한 산출물을 작성합니다.
+4. 예시 산출물로 먼저 연습한 뒤 자신의 연구 내용으로 다시 수행합니다.
+5. 각 단계의 판단과 수정 근거를 기록하고 최종 결과를 직접 확인합니다.
+:::
 
 ::: {.callout-important title="실습의 목적"}
 이 실습의 목적은 ChatGPT를 이용하여 논문을 더 **쉽게** 쓰는 데 있지 않습니다. ChatGPT를 활용하여 더 **좋은** 논문을 더 **빨리** 쓰고, 그 과정에서 더 나은 연구자로 **성장**하는 방법을 익히는 데 있습니다.

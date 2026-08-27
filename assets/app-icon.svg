@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+  <title id="title">말풍선과 확인 표시 앱 아이콘</title>
+  <rect width="1024" height="1024" fill="#2780e3"/>
+  <g transform="translate(64 32) scale(14)">
+    <path fill="#fff" d="M16 14h28a8 8 0 0 1 8 8v17a8 8 0 0 1-8 8H28l-12 8v-8a8 8 0 0 1-8-8V22a8 8 0 0 1 8-8Z"/>
+    <path fill="none" stroke="#e32636" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="m38 23.5 7 7 13.5-16"/>
+  </g>
+</svg>

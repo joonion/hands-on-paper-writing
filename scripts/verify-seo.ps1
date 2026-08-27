@@ -11,9 +11,34 @@ if (-not (Test-Path -LiteralPath $siteRoot -PathType Container)) {
 
 $baseUri = [uri]$SiteUrl
 $basePath = $baseUri.AbsolutePath.TrimEnd('/') + '/'
-$contentPages = @('index.html') + @(1..12 | ForEach-Object { 'chapters/ch{0:d2}.html' -f $_ })
+$contentPages = @('index.html', 'about.html') + @(1..12 | ForEach-Object { 'chapters/ch{0:d2}.html' -f $_ })
 $errors = [System.Collections.Generic.List[string]]::new()
 $pageResults = @()
+$imagesMissingAlt = 0
+$downloadLinksChecked = 0
+$expectedSocialImage = ([uri]::new($baseUri, 'assets/social-card.png')).AbsoluteUri
+$expectedManifest = ([uri]::new($baseUri, 'site.webmanifest')).AbsoluteUri
+$expectedAppleTouchIcon = ([uri]::new($baseUri, 'assets/apple-touch-icon.png')).AbsoluteUri
+
+function Get-PngDimensions {
+    param([Parameter(Mandatory)][string]$Path)
+
+    $bytes = [System.IO.File]::ReadAllBytes($Path)
+    $signature = [byte[]](137, 80, 78, 71, 13, 10, 26, 10)
+    if ($bytes.Length -lt 24) {
+        throw "PNG file is too short: $Path"
+    }
+    for ($index = 0; $index -lt $signature.Length; $index++) {
+        if ($bytes[$index] -ne $signature[$index]) {
+            throw "Invalid PNG signature: $Path"
+        }
+    }
+
+    [pscustomobject]@{
+        Width = [System.Net.IPAddress]::NetworkToHostOrder([System.BitConverter]::ToInt32($bytes, 16))
+        Height = [System.Net.IPAddress]::NetworkToHostOrder([System.BitConverter]::ToInt32($bytes, 20))
+    }
+}
 
 foreach ($relativePath in $contentPages) {
     $localPath = Join-Path $siteRoot $relativePath
@@ -45,6 +70,32 @@ foreach ($relativePath in $contentPages) {
         $html,
         '(?is)<meta\s+name="twitter:card"\s+content="([^"]*)"'
     ).Groups[1].Value.Trim()
+    $ogImage = [regex]::Match(
+        $html,
+        '(?is)<meta\s+property="og:image"\s+content="([^"]*)"'
+    ).Groups[1].Value.Trim()
+    $ogImageAlt = [System.Net.WebUtility]::HtmlDecode(
+        [regex]::Match($html, '(?is)<meta\s+property="og:image:alt"\s+content="([^"]*)"').Groups[1].Value.Trim()
+    )
+    $twitterImage = [regex]::Match(
+        $html,
+        '(?is)<meta\s+name="twitter:image"\s+content="([^"]*)"'
+    ).Groups[1].Value.Trim()
+    $twitterImageAlt = [System.Net.WebUtility]::HtmlDecode(
+        [regex]::Match($html, '(?is)<meta\s+name="twitter:image:alt"\s+content="([^"]*)"').Groups[1].Value.Trim()
+    )
+    $themeColor = [regex]::Match(
+        $html,
+        '(?is)<meta\s+name="theme-color"\s+content="([^"]*)"'
+    ).Groups[1].Value.Trim()
+    $manifestHref = [regex]::Match(
+        $html,
+        '(?is)<link\s+rel="manifest"[^>]+href="([^"]+)"'
+    ).Groups[1].Value.Trim()
+    $appleTouchIcon = [regex]::Match(
+        $html,
+        '(?is)<link\s+rel="apple-touch-icon"[^>]+href="([^"]+)"'
+    ).Groups[1].Value.Trim()
     $expectedCanonical = if ($relativePath -eq 'index.html') {
         $baseUri.AbsoluteUri
     }
@@ -70,12 +121,43 @@ foreach ($relativePath in $contentPages) {
     if ([string]::IsNullOrWhiteSpace($twitterCard)) {
         $errors.Add("Missing Twitter Card metadata: $relativePath")
     }
+    elseif ($twitterCard -ne 'summary_large_image') {
+        $errors.Add("Expected summary_large_image Twitter Card: $relativePath -> $twitterCard")
+    }
+    if ($ogImage -ne $expectedSocialImage -or $twitterImage -ne $expectedSocialImage) {
+        $errors.Add("Social preview image mismatch: $relativePath")
+    }
+    if ([string]::IsNullOrWhiteSpace($ogImageAlt) -or [string]::IsNullOrWhiteSpace($twitterImageAlt)) {
+        $errors.Add("Missing social preview image alt text: $relativePath")
+    }
+    if ($themeColor -ne '#2780e3') {
+        $errors.Add("Theme color mismatch: $relativePath -> $themeColor")
+    }
+    if ($manifestHref -ne $expectedManifest) {
+        $errors.Add("Manifest link mismatch: $relativePath -> $manifestHref")
+    }
+    if ($appleTouchIcon -ne $expectedAppleTouchIcon) {
+        $errors.Add("Apple touch icon mismatch: $relativePath -> $appleTouchIcon")
+    }
+    if ($html -notmatch '(?is)<html\b[^>]*\blang="ko"') {
+        $errors.Add("Missing Korean document language: $relativePath")
+    }
+    if ($html -notmatch '(?is)<link\b[^>]*\brel="icon"') {
+        $errors.Add("Missing favicon link: $relativePath")
+    }
     if ([regex]::IsMatch($html, '(?is)<meta\s+name="robots"\s+content="[^"]*noindex')) {
         $errors.Add("Unexpected noindex directive: $relativePath")
     }
     if ([regex]::Matches($html, '(?is)<h1\b').Count -ne 1) {
         $errors.Add("Expected exactly one h1: $relativePath")
     }
+    foreach ($imageMatch in [regex]::Matches($html, '(?is)<img\b[^>]*>')) {
+        if ($imageMatch.Value -notmatch '(?is)\balt\s*=') {
+            $imagesMissingAlt++
+            $errors.Add("Image missing alt attribute: $relativePath -> $($imageMatch.Value)")
+        }
+    }
+    $downloadLinksChecked += [regex]::Matches($html, '(?is)<a\b[^>]*\bdownload(?:\s*=|\s|>)').Count
 
     $pageResults += [pscustomobject]@{
         Page = $relativePath
@@ -121,6 +203,48 @@ else {
 $notFoundPath = Join-Path $siteRoot '404.html'
 if (-not (Test-Path -LiteralPath $notFoundPath -PathType Leaf)) {
     $errors.Add('Missing 404.html')
+}
+
+$manifestPath = Join-Path $siteRoot 'site.webmanifest'
+if (-not (Test-Path -LiteralPath $manifestPath -PathType Leaf)) {
+    $errors.Add('Missing site.webmanifest')
+}
+else {
+    try {
+        $manifest = Get-Content -Raw -Encoding utf8 -LiteralPath $manifestPath | ConvertFrom-Json
+        if ($manifest.lang -ne 'ko' -or $manifest.theme_color -ne '#2780e3') {
+            $errors.Add('Manifest language or theme color mismatch')
+        }
+        if (@($manifest.icons).Count -ne 2) {
+            $errors.Add("Expected 2 manifest icons, found $(@($manifest.icons).Count)")
+        }
+    }
+    catch {
+        $errors.Add("Invalid site.webmanifest: $($_.Exception.Message)")
+    }
+}
+
+$expectedPngAssets = @{
+    'assets/social-card.png' = @(1200, 630)
+    'assets/apple-touch-icon.png' = @(180, 180)
+    'assets/icon-192.png' = @(192, 192)
+    'assets/icon-512.png' = @(512, 512)
+}
+foreach ($assetEntry in $expectedPngAssets.GetEnumerator()) {
+    $assetPath = Join-Path $siteRoot $assetEntry.Key
+    if (-not (Test-Path -LiteralPath $assetPath -PathType Leaf)) {
+        $errors.Add("Missing image asset: $($assetEntry.Key)")
+        continue
+    }
+    try {
+        $dimensions = Get-PngDimensions -Path $assetPath
+        if ($dimensions.Width -ne $assetEntry.Value[0] -or $dimensions.Height -ne $assetEntry.Value[1]) {
+            $errors.Add("Image dimensions mismatch: $($assetEntry.Key) -> $($dimensions.Width)x$($dimensions.Height)")
+        }
+    }
+    catch {
+        $errors.Add($_.Exception.Message)
+    }
 }
 
 $brokenLinks = [System.Collections.Generic.HashSet[string]]::new()
@@ -175,12 +299,16 @@ $summary = [pscustomobject]@{
     UniqueDescriptions = @($pageResults.Description | Sort-Object -Unique).Count
     SitemapUrls = $sitemapUrls.Count
     Has404 = (Test-Path -LiteralPath $notFoundPath -PathType Leaf)
+    SocialPreviewImages = @($pageResults).Count
+    PwaImageAssets = $expectedPngAssets.Count
+    ImagesMissingAlt = $imagesMissingAlt
+    DownloadLinksChecked = $downloadLinksChecked
     BrokenLocalLinks = $brokenLinks.Count
     Errors = $errors.Count
 }
 
 $summary | Format-List
 if ($errors.Count -gt 0) {
-    $errors | ForEach-Object { Write-Error $_ }
+    $errors | ForEach-Object { Write-Host "ERROR: $_" -ForegroundColor Red }
     exit 1
 }
