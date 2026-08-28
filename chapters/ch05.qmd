@@ -18,7 +18,7 @@ description-meta: "ChatGPT가 작성한 논문 초안의 문장, 문단, 절과 
 
 - Obsidian을 내려받아 설치합니다.
   - [Obsidian 내려받기](https://obsidian.md/download) 
-- 4장에서 완성한 [`논문초안.md`](../downloads/논문초안_4장.md){download="논문초안.md"}를 Obsidian에 추가합니다.
+- 4장에서 완성한 [`논문초안.md`](../downloads/04_논문초안.md){download="논문초안.md"}를 Obsidian에 추가합니다.
 - 수정하기 전에 `논문초안.md`를 `논문초고.md`로 복사합니다.
 
 ## 실습 절차
